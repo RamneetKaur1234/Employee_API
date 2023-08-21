@@ -8,7 +8,11 @@ namespace WebApplication_FirstAPI_Employee.Models
         public int Id { get; set; }
         [Required (ErrorMessage ="This Field Is Mandatory...!!")]
         public string Username { get; set; }
-        [Required (ErrorMessage = "This Field Is Mandatory...!!")]
+        //[Required (ErrorMessage = "This Field Is Mandatory...!!")]
+        [RegularExpression(@"^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[^\da-zA-Z]).{8,15}$",
+        ErrorMessage = "Password must be between 6 and 20 characters and contain one uppercase letter," +
+           " one lowercase letter," +
+           " one digit and one special character...!!")]
         public string Password { get; set; }
         [Required (ErrorMessage = "This Field Is Mandatory...!!")]
         [Compare("Password")]

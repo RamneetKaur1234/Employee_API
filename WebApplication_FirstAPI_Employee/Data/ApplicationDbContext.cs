@@ -10,6 +10,8 @@ namespace WebApplication_FirstAPI_Employee.Data
                 
         }
         public DbSet<Employee> Employees { get; set; }
+        public DbSet<Trainee> Trainees { get; set; }
+
         public DbSet<User> Users { get; set; }
 
     }

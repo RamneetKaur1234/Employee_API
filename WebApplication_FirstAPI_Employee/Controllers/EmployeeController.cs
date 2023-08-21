@@ -4,68 +4,78 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using WebApplication_FirstAPI_Employee.Data;
 using WebApplication_FirstAPI_Employee.Models;
+using WebApplication_FirstAPI_Employee.Repository.iRepository;
 
 namespace WebApplication_FirstAPI_Employee.Controllers
 {
     [Route("api/employee")]
     [ApiController]
-    [Authorize]
     public class EmployeeController : ControllerBase
     {
-        private readonly ApplicationDbContext _context;
-        public EmployeeController(ApplicationDbContext context)
+        private readonly IUnitOfWork _unitofwork;
+        public EmployeeController(IUnitOfWork unitOfWork)
         {
-                _context = context;
+            _unitofwork = unitOfWork;
         }
+        [Authorize(Roles = "Employee,Admin")]
         [HttpGet]
-        public IActionResult GetEmployees()
+        public async Task<IActionResult> GetEmployees()
         {
-            return Ok(_context.Employees.ToList());
+            var employeeList = await _unitofwork.Employee.GetAll();
+            if (employeeList == null)
+            {
+                return NotFound();
+            }
+            return Ok(employeeList);
         }
+
+        [Authorize(Roles = "Admin")]
+        [HttpGet("{EmployeeId:int}")]
+        public async Task<IActionResult> GetEmployeeById(int EmployeeId)
+        {
+            var employeeDetails = await _unitofwork.Employee.Get(EmployeeId);
+            if (employeeDetails != null)
+            {
+                return Ok(employeeDetails);
+            }
+            else
+            {
+                return BadRequest();
+            }
+        }
+
+        [Authorize(Roles = "Admin")]
         [HttpPost]
-        public IActionResult SaveEmployee([FromBody] Employee employee)
+        public IActionResult CreateEmployee([FromBody] Employee employee)
         {
             if (employee == null) return BadRequest();
             if (!ModelState.IsValid) return BadRequest();
-            var employeeDb = _context.Employees.ToList().Where(x => x.EMail == employee.EMail).FirstOrDefault();
-            if(employeeDb==null)
-            {
-                _context.Employees.Add(employee);
-                _context.SaveChanges();
-            }
-            else
-            {
-                return StatusCode(404, "Email In Use...!!");
-            }
+            _unitofwork.Employee.Add(employee);
+            _unitofwork.Save();
             return Ok();
         }
+
+        [Authorize(Roles = "Admin")]
         [HttpPut]
         public IActionResult UpdateEmployee([FromBody] Employee employee)
         {
-            if(employee==null) return BadRequest();
+            if (employee == null) return BadRequest();
             if (!ModelState.IsValid) return BadRequest();
-            var employeeInDb=_context.Employees.AsNoTracking().Where(x=>x.EMail== employee.EMail && x.Id==employee.Id).FirstOrDefault();
-            var employeeInDb2=_context.Employees.AsNoTracking().Where(x=>x.EMail== employee.EMail && x.Id!=employee.Id).FirstOrDefault();
-
-            if(employeeInDb==null && employeeInDb2!=null)
-            {
-                return StatusCode(404, "Email Already Existed In DB...!!");
-            }
-            else
-            {
-                _context.Employees.Update(employee);
-                _context.SaveChanges();
-            }
+            _unitofwork.Employee.Update(employee);
+            _unitofwork.Save();
             return Ok();
         }
+
+        [Authorize(Roles = "Admin")]
         [HttpDelete("{id:int}")]
         public IActionResult DeleteEmployee(int id)
         {
-            var employeeInDb = _context.Employees.Find(id);
+            var employeeInDb = _unitofwork.Employee.Find(id);
             if (employeeInDb == null) return NotFound();
-            _context.Employees.Remove(employeeInDb);
-            _context.SaveChanges();
+            _unitofwork.Employee.Delete(employeeInDb);
+            _unitofwork.Save();
             return Ok();
         }
+
     }
 }
