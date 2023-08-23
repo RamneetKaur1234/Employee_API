@@ -1,4 +1,6 @@
-﻿using WebApplication_FirstAPI_Employee.Data;
+﻿using Microsoft.EntityFrameworkCore.Storage;
+using System.Data;
+using WebApplication_FirstAPI_Employee.Data;
 using WebApplication_FirstAPI_Employee.Repository.iRepository;
 
 namespace WebApplication_FirstAPI_Employee.Repository
@@ -18,22 +20,28 @@ namespace WebApplication_FirstAPI_Employee.Repository
         public ITraineeRepository Trainee { get; private set; }
 
 
-        public void Dispose()
-        {
-            Dispose(true);
-            GC.SuppressFinalize(this);
-        }
-        protected virtual void Dispose(bool disposing)
-        {
-            if (disposing)
-            {
-                _context.Dispose();
-            }
-        }
+        //public void Dispose()
+        //{
+        //    Dispose(true);
+        //    GC.SuppressFinalize(this);
+        //}
+        //protected virtual void Dispose(bool disposing)
+        //{
+        //    if (disposing)
+        //    {
+        //        _context.Dispose();
+        //    }
+        //}
 
         public int Save()
         {
             return _context.SaveChanges();
+        }
+
+        public IDbTransaction BeginTransaction()
+        {
+            var transaction = _context.Database.BeginTransaction();
+            return transaction.GetDbTransaction();
         }
     }
 }

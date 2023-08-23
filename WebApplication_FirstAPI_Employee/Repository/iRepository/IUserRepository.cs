@@ -1,11 +1,12 @@
 ﻿using WebApplication_FirstAPI_Employee.Models;
+using WebApplication_FirstAPI_Employee.Models.ViewModels;
 
 namespace WebApplication_FirstAPI_Employee.Repository.iRepository
 {
     public interface IUserRepository
     {
-        bool IsUniqueUser (string username);
+        bool IsUniqueUser (UserVModel2 user);
         User Autenticate (string username,string password);
-        User Register (string username,string password,string confirmPassword,string role);
+        User Register (UserVModel2 uservm2);
     }
 }

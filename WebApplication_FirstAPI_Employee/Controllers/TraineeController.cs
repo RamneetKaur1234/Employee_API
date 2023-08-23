@@ -16,7 +16,7 @@ namespace WebApplication_FirstAPI_Employee.Controllers
             _unitofwork = unitOfWork;
         }
 
-        [Authorize(Roles = "Trainee,Admin")]
+        [Authorize(Roles = "Admin")]
         [HttpGet]
         public async Task<IActionResult> GetTraineeList()
         {
@@ -45,34 +45,81 @@ namespace WebApplication_FirstAPI_Employee.Controllers
 
         [Authorize(Roles = "Admin")]
         [HttpPost]
-        public IActionResult CreateTrainee([FromBody] Trainee trainee)
+        public IActionResult CreateTrainee([FromBody] List<Trainee> trainee)
         {
             if (trainee == null) return BadRequest();
             if (!ModelState.IsValid) return BadRequest();
-            _unitofwork.Trainee.Add(trainee);
-            _unitofwork.Save();
+            using var transaction = _unitofwork.BeginTransaction();
+            try
+            {
+                foreach (var train in trainee)
+                {
+                    if(train.Name=="")
+                    {
+                        throw new Exception("Name Can't Be Empty...!!");
+                    }
+                    _unitofwork.Trainee.Add(train);
+                    _unitofwork.Save();
+                }
+                transaction.Commit();
+            }
+            catch (Exception exc)
+            {
+                transaction.Rollback();
+                return StatusCode(404, exc.Message);
+            }            
             return Ok();
         }
 
         [Authorize(Roles = "Admin")]
         [HttpPut]
-        public IActionResult UpdateTrainee([FromBody] Trainee trainee)
+        public IActionResult UpdateTrainee([FromBody] List<Trainee> trainee)
         {
             if (trainee == null) return BadRequest();
             if (!ModelState.IsValid) return BadRequest();
-            _unitofwork.Trainee.Update(trainee);
-            _unitofwork.Save();
+            using var transaction = _unitofwork.BeginTransaction();
+            try
+            {
+                foreach (var train in trainee)
+                {
+                    if(train.Name=="")
+                    {
+                        throw new Exception("Name Can't Be Empty...!!");
+                    }
+                    _unitofwork.Trainee.Update(train);
+                    _unitofwork.Save();
+                }
+                transaction.Commit();
+            }
+            catch (Exception exc)
+            {
+                transaction.Rollback();
+                return StatusCode(404,exc.Message);
+            }            
             return Ok();
         }
 
         [Authorize(Roles = "Admin")]
-        [HttpDelete("{id:int}")]
-        public IActionResult DeleteTrainee(int id)
+        [HttpDelete]
+        public IActionResult DeleteTrainee(int[] ids)
         {
-            var traineeInDb = _unitofwork.Trainee.Find(id);
-            if (traineeInDb == null) return NotFound();
-            _unitofwork.Trainee.Delete(traineeInDb);
-            _unitofwork.Save();
+            using var transaction= _unitofwork.BeginTransaction();
+            try
+            {
+                foreach (var id in ids)
+                {
+                    var traineeInDb = _unitofwork.Trainee.Find(id);
+                    //if (traineeInDb == null) return NotFound();
+                    _unitofwork.Trainee.Delete(traineeInDb);
+                    _unitofwork.Save();
+                }
+                transaction.Commit();
+            }
+            catch (Exception exc)
+            {
+                transaction.Rollback();
+                return StatusCode(404, exc.Message);
+            }           
             return Ok();
         }
     }

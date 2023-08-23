@@ -11,21 +11,36 @@ namespace WebApplication_FirstAPI_Employee.Controllers
     public class UserController : ControllerBase
     {
         private readonly IUserRepository _userRepository;
-        public UserController(IUserRepository userRepository)
+        private readonly IUnitOfWork _unitofwork;
+        public UserController(IUserRepository userRepository,IUnitOfWork unitOfWork)
         {
             _userRepository = userRepository;
+            _unitofwork= unitOfWork;
         }
         [HttpPost("register")]
-        public IActionResult Register(User user)
+        public IActionResult Register([FromBody] List<UserVModel2> users)
         {
-            if(ModelState.IsValid)
+            using var transaction=_unitofwork.BeginTransaction();
+            try
             {
-                var isUniqueUser = _userRepository.IsUniqueUser(user.Username);
-                if (!isUniqueUser)
-                    return BadRequest("User In Use...!!");
-                var userInfo = _userRepository.Register(user.Username,user.Password,user.ConfirmPassword,user.Role);
-                if (userInfo == null) return BadRequest(); 
+                if (ModelState.IsValid)
+                {
+                    foreach (var user in users)
+                    {
+                        var isUniqueUser = _userRepository.IsUniqueUser(user);
+                        if (!isUniqueUser)
+                            return BadRequest("User In Use...!!");
+                        var userInfo = _userRepository.Register(user);
+                        if (userInfo == null) return BadRequest();
+                    }
+                    transaction.Commit();
+                }
             }
+            catch (Exception exc)
+            {
+                transaction.Rollback();
+                return StatusCode(404,exc.Message);
+            }            
             return Ok();
         }
         [HttpPost("Authenticate")]

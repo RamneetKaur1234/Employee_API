@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
 using System.IdentityModel.Tokens.Jwt;
@@ -6,6 +7,7 @@ using System.Security.Claims;
 using System.Text;
 using WebApplication_FirstAPI_Employee.Data;
 using WebApplication_FirstAPI_Employee.Models;
+using WebApplication_FirstAPI_Employee.Models.ViewModels;
 using WebApplication_FirstAPI_Employee.Repository.iRepository;
 
 namespace WebApplication_FirstAPI_Employee.Repository
@@ -45,20 +47,26 @@ namespace WebApplication_FirstAPI_Employee.Repository
             return userInDb;
         }
 
-        public bool IsUniqueUser(string username)
+        //public bool IsUniqueUser(List<UserVModel2> user)
+        //{
+        //    var userInDb = _context.Users.FirstOrDefault(x => x.Username = user & x.Role = user);
+        //    if (userInDb == null) return true; return false;
+        //}
+
+        public bool IsUniqueUser(UserVModel2 user)
         {
-           var userInDb=_context.Users.FirstOrDefault(x=>x.Username == username);
+            var userInDb = _context.Users.FirstOrDefault(x => x.Username ==user.UserName && x.Role==user.Role);
             if (userInDb == null) return true; return false;
         }
 
-        public User Register(string username, string password, string confirmPassword,string role)
+        public User Register(UserVModel2 uservm2)
         {
             User user=new User()
             {
-                Username= username,
-                Password = password,
-                ConfirmPassword=confirmPassword,
-                Role=role
+                Username= uservm2.UserName,
+                Password = uservm2.Password,
+                ConfirmPassword=uservm2.ConfirmPassword,
+                Role=uservm2.Role
             };
             _context.Users.Add(user);
             _context.SaveChanges();

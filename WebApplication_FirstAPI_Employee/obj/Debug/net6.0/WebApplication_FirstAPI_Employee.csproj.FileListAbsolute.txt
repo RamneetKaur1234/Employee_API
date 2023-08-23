@@ -1,3 +1,10 @@
+G:\API'S\WebApplication_FirstAPI_Employee\WebApplication_FirstAPI_Employee\obj\Debug\net6.0\WebApplication_FirstAPI_Employee.csproj.AssemblyReference.cache
+G:\API'S\WebApplication_FirstAPI_Employee\WebApplication_FirstAPI_Employee\obj\Debug\net6.0\WebApplication_FirstAPI_Employee.GeneratedMSBuildEditorConfig.editorconfig
+G:\API'S\WebApplication_FirstAPI_Employee\WebApplication_FirstAPI_Employee\obj\Debug\net6.0\WebApplication_FirstAPI_Employee.AssemblyInfoInputs.cache
+G:\API'S\WebApplication_FirstAPI_Employee\WebApplication_FirstAPI_Employee\obj\Debug\net6.0\WebApplication_FirstAPI_Employee.AssemblyInfo.cs
+G:\API'S\WebApplication_FirstAPI_Employee\WebApplication_FirstAPI_Employee\obj\Debug\net6.0\WebApplication_FirstAPI_Employee.csproj.CoreCompileInputs.cache
+G:\API'S\WebApplication_FirstAPI_Employee\WebApplication_FirstAPI_Employee\obj\Debug\net6.0\WebApplication_FirstAPI_Employee.MvcApplicationPartsAssemblyInfo.cs
+G:\API'S\WebApplication_FirstAPI_Employee\WebApplication_FirstAPI_Employee\obj\Debug\net6.0\WebApplication_FirstAPI_Employee.MvcApplicationPartsAssemblyInfo.cache
 G:\API'S\WebApplication_FirstAPI_Employee\WebApplication_FirstAPI_Employee\bin\Debug\net6.0\appsettings.Development.json
 G:\API'S\WebApplication_FirstAPI_Employee\WebApplication_FirstAPI_Employee\bin\Debug\net6.0\appsettings.json
 G:\API'S\WebApplication_FirstAPI_Employee\WebApplication_FirstAPI_Employee\bin\Debug\net6.0\WebApplication_FirstAPI_Employee.exe
@@ -46,13 +53,6 @@ G:\API'S\WebApplication_FirstAPI_Employee\WebApplication_FirstAPI_Employee\bin\D
 G:\API'S\WebApplication_FirstAPI_Employee\WebApplication_FirstAPI_Employee\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
 G:\API'S\WebApplication_FirstAPI_Employee\WebApplication_FirstAPI_Employee\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
 G:\API'S\WebApplication_FirstAPI_Employee\WebApplication_FirstAPI_Employee\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
-G:\API'S\WebApplication_FirstAPI_Employee\WebApplication_FirstAPI_Employee\obj\Debug\net6.0\WebApplication_FirstAPI_Employee.csproj.AssemblyReference.cache
-G:\API'S\WebApplication_FirstAPI_Employee\WebApplication_FirstAPI_Employee\obj\Debug\net6.0\WebApplication_FirstAPI_Employee.GeneratedMSBuildEditorConfig.editorconfig
-G:\API'S\WebApplication_FirstAPI_Employee\WebApplication_FirstAPI_Employee\obj\Debug\net6.0\WebApplication_FirstAPI_Employee.AssemblyInfoInputs.cache
-G:\API'S\WebApplication_FirstAPI_Employee\WebApplication_FirstAPI_Employee\obj\Debug\net6.0\WebApplication_FirstAPI_Employee.AssemblyInfo.cs
-G:\API'S\WebApplication_FirstAPI_Employee\WebApplication_FirstAPI_Employee\obj\Debug\net6.0\WebApplication_FirstAPI_Employee.csproj.CoreCompileInputs.cache
-G:\API'S\WebApplication_FirstAPI_Employee\WebApplication_FirstAPI_Employee\obj\Debug\net6.0\WebApplication_FirstAPI_Employee.MvcApplicationPartsAssemblyInfo.cs
-G:\API'S\WebApplication_FirstAPI_Employee\WebApplication_FirstAPI_Employee\obj\Debug\net6.0\WebApplication_FirstAPI_Employee.MvcApplicationPartsAssemblyInfo.cache
 G:\API'S\WebApplication_FirstAPI_Employee\WebApplication_FirstAPI_Employee\obj\Debug\net6.0\staticwebassets\msbuild.WebApplication_FirstAPI_Employee.Microsoft.AspNetCore.StaticWebAssets.props
 G:\API'S\WebApplication_FirstAPI_Employee\WebApplication_FirstAPI_Employee\obj\Debug\net6.0\staticwebassets\msbuild.build.WebApplication_FirstAPI_Employee.props
 G:\API'S\WebApplication_FirstAPI_Employee\WebApplication_FirstAPI_Employee\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.WebApplication_FirstAPI_Employee.props
