@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Diagnostics;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using WebApplication_FirstAPI_Employee.Models;
 using WebApplication_FirstAPI_Employee.Models.ViewModels;
@@ -12,10 +13,13 @@ namespace WebApplication_FirstAPI_Employee.Controllers
     {
         private readonly IUserRepository _userRepository;
         private readonly IUnitOfWork _unitofwork;
-        public UserController(IUserRepository userRepository,IUnitOfWork unitOfWork)
+        private readonly ILogger<User> _logger;
+        public UserController(IUserRepository userRepository,IUnitOfWork unitOfWork, ILogger<User> logger)
         {
             _userRepository = userRepository;
-            _unitofwork= unitOfWork;
+            _unitofwork = unitOfWork;
+            _logger = logger;
+
         }
         [HttpPost("register")]
         public IActionResult Register([FromBody] List<UserVModel2> users)
@@ -32,6 +36,7 @@ namespace WebApplication_FirstAPI_Employee.Controllers
                             return BadRequest("User In Use...!!");
                         var userInfo = _userRepository.Register(user);
                         if (userInfo == null) return BadRequest();
+                        _logger.LogInformation("User Registered...!!");
                     }
                     transaction.Commit();
                 }
@@ -48,7 +53,26 @@ namespace WebApplication_FirstAPI_Employee.Controllers
         {
             var user = _userRepository.Autenticate(userVM.Username, userVM.Password);
             if (user == null) return BadRequest("Wrong User & Pswrd...!!");
+            _logger.LogInformation("User Login'ed...!!");
             return Ok(user);
         }
+
+        [ApiExplorerSettings(IgnoreApi =true)]
+        [Route("/error-development")]
+        public IActionResult HandleErrorDevelopment([FromServices] IHostEnvironment hostEnvironment)
+        {
+            if(!hostEnvironment.IsDevelopment())
+            {
+                return NotFound();
+            }
+            var exceptionHandlerFeature = HttpContext.Features.Get<IExceptionHandlerFeature>()!;
+            return Problem(
+                detail:exceptionHandlerFeature.Error.StackTrace,
+                title:exceptionHandlerFeature.Error.Message);
+        }
+
+        [ApiExplorerSettings(IgnoreApi =true)]
+        [Route("/error")]
+        public IActionResult HandleError() => Problem();
     }
 }

@@ -1,4 +1,6 @@
 using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.HttpLogging;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
@@ -8,7 +10,7 @@ using WebApplication_FirstAPI_Employee;
 using WebApplication_FirstAPI_Employee.Data;
 using WebApplication_FirstAPI_Employee.Repository;
 using WebApplication_FirstAPI_Employee.Repository.iRepository;
-
+using static System.Net.Mime.MediaTypeNames;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -42,6 +44,7 @@ builder.Services.AddAuthentication(x =>
     {
         ValidateIssuerSigningKey = true,
         IssuerSigningKey = new SymmetricSecurityKey(key)
+
 ,
         ValidateIssuer = false,
         ValidateAudience = false
@@ -50,6 +53,31 @@ builder.Services.AddAuthentication(x =>
 
 //*****
 
+//***   
+
+builder.Services.AddControllers()
+    .ConfigureApiBehaviorOptions(options =>
+     {
+         options.InvalidModelStateResponseFactory = context =>
+         new BadRequestObjectResult(context.ModelState)
+         {
+             ContentTypes =
+             {
+            // using static System.Net.Mime.MediaTypeNames;
+            Application.Json,
+            Application.Xml
+             }
+         };
+     })
+    .AddXmlSerializerFormatters();
+
+builder.Services.AddHttpLogging(httpLogging =>
+{
+    httpLogging.LoggingFields = HttpLoggingFields.All;
+});
+
+//***
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -57,7 +85,14 @@ if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
     app.UseSwaggerUI();
+    app.UseExceptionHandler("/error-development");
 }
+else
+{
+    app.UseExceptionHandler("/error");
+}
+
+app.UseHttpLogging();
 
 app.UseHttpsRedirection();
 
