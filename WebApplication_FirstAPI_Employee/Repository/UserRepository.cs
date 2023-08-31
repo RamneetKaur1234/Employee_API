@@ -16,7 +16,7 @@ namespace WebApplication_FirstAPI_Employee.Repository
     {
         private readonly AppSettings _appSettings;
         private readonly ApplicationDbContext _context;
-        public UserRepository(ApplicationDbContext context,IOptions<AppSettings> appSettings)
+        public UserRepository(ApplicationDbContext context, IOptions<AppSettings> appSettings)
         {
             _context = context;
             _appSettings = appSettings.Value;

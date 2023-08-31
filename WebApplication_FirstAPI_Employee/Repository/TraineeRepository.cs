@@ -6,7 +6,7 @@ namespace WebApplication_FirstAPI_Employee.Repository
 {
     public class TraineeRepository:Repository<Trainee>,ITraineeRepository
     {
-        public TraineeRepository(ApplicationDbContext context):base (context)
+        public TraineeRepository(ApplicationDbContext context) : base(context)
         {
                 
         }

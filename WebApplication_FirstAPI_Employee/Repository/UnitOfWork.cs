@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore.Storage;
+using Microsoft.Extensions.Options;
 using System.Data;
 using WebApplication_FirstAPI_Employee.Data;
 using WebApplication_FirstAPI_Employee.Repository.iRepository;
@@ -8,16 +9,20 @@ namespace WebApplication_FirstAPI_Employee.Repository
     public class UnitOfWork : IUnitOfWork
     {
         private readonly ApplicationDbContext _context;
+        private readonly AppSettings _appsettings;
 
-        public UnitOfWork(ApplicationDbContext context)
+        public UnitOfWork(ApplicationDbContext context,IOptions<AppSettings> appSettings)
         {
             _context = context;
+            _appsettings = appSettings.Value;
             Employee = new EmployeeRepository(context);
             Trainee = new TraineeRepository(context);
+            User = new UserRepository(context,appSettings);
         }
 
-        public IEmployeeRepository Employee { get; private set; }
+        public IEmployeeRepository Employee { get; private set; }   
         public ITraineeRepository Trainee { get; private set; }
+        public IUserRepository User { get; private set; }
 
 
         //public void Dispose()

@@ -6,6 +6,7 @@ namespace WebApplication_FirstAPI_Employee.Repository.iRepository
     {
         IEmployeeRepository Employee { get; }
         ITraineeRepository Trainee { get; }
+        IUserRepository User { get; }
         int Save();
         IDbTransaction BeginTransaction();
     }

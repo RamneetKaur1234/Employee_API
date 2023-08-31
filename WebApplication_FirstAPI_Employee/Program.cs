@@ -92,6 +92,10 @@ else
     app.UseExceptionHandler("/error");
 }
 
+var loggerFactory = app.Services.GetRequiredService<ILoggerFactory>();
+var path = Directory.GetCurrentDirectory();
+loggerFactory.AddFile($"{path}\\Logs\\Log.txt");
+
 app.UseHttpLogging();
 
 app.UseHttpsRedirection();
