@@ -2,7 +2,7 @@
 using Microsoft.Extensions.Options;
 using System.Data;
 using WebApplication_FirstAPI_Employee.Data;
-using WebApplication_FirstAPI_Employee.Repository.iRepository;
+using WebApplication_FirstAPI_Employee.Repository.IRepository;
 
 namespace WebApplication_FirstAPI_Employee.Repository
 {
@@ -18,11 +18,14 @@ namespace WebApplication_FirstAPI_Employee.Repository
             Employee = new EmployeeRepository(context);
             Trainee = new TraineeRepository(context);
             User = new UserRepository(context,appSettings);
+            Organization = new OrganizationRepository(context);
         }
 
         public IEmployeeRepository Employee { get; private set; }   
         public ITraineeRepository Trainee { get; private set; }
         public IUserRepository User { get; private set; }
+
+        public IOrganizationRepository Organization { get; private set; }
 
 
         //public void Dispose()

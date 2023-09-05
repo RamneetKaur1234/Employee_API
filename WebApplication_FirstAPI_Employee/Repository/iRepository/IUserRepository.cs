@@ -1,7 +1,7 @@
 ﻿using WebApplication_FirstAPI_Employee.Models;
 using WebApplication_FirstAPI_Employee.Models.ViewModels;
 
-namespace WebApplication_FirstAPI_Employee.Repository.iRepository
+namespace WebApplication_FirstAPI_Employee.Repository.IRepository
 {
     public interface IUserRepository
     {

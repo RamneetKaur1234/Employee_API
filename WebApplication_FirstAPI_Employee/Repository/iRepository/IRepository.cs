@@ -1,4 +1,6 @@
-﻿namespace WebApplication_FirstAPI_Employee.Repository.iRepository
+﻿using System.Linq.Expressions;
+
+namespace WebApplication_FirstAPI_Employee.Repository.IRepository
 {
     public interface IRepository<T> where T : class
     {
@@ -8,5 +10,7 @@
         Task Add(T entity);
         void Update(T entity);
         void Delete(T entity);
+        T FirstorDefault(Expression<Func<T, bool>> filter = null,
+            string includeProperties = null);
     }
 }

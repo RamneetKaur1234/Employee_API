@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "hRz9CoN9ikhPuHZeleEB7/LItoFZOd5jMnVKEsWFiyUrsP+EzkPgfN3q/iOsaXJ8ANluCQhhnM4vmw6BPX54WQ==",
+  "dgSpecHash": "AiOI5bQUHeghkScg+lfBBDlAmPctKSxVJm93kOZI0oTSlkWqs70/tgyDL7JJDMQF3KL/nVpTlFQx3PdRpET/LQ==",
   "success": true,
-  "projectFilePath": "G:\\API'S\\WebApplication_FirstAPI_Employee\\WebApplication_FirstAPI_Employee\\WebApplication_FirstAPI_Employee.csproj",
+  "projectFilePath": "C:\\Users\\Dell\\Desktop\\New folder\\Employee_API\\WebApplication_FirstAPI_Employee\\WebApplication_FirstAPI_Employee.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Dell\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
+    "C:\\Users\\Dell\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
     "C:\\Users\\Dell\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Dell\\.nuget\\packages\\microsoft.aspnet.webapi.client\\5.2.9\\microsoft.aspnet.webapi.client.5.2.9.nupkg.sha512",
     "C:\\Users\\Dell\\.nuget\\packages\\microsoft.aspnet.webapi.core\\5.2.9\\microsoft.aspnet.webapi.core.5.2.9.nupkg.sha512",
@@ -11,7 +13,7 @@
     "C:\\Users\\Dell\\.nuget\\packages\\microsoft.build.framework\\17.7.0\\microsoft.build.framework.17.7.0.nupkg.sha512",
     "C:\\Users\\Dell\\.nuget\\packages\\microsoft.build.tasks.core\\17.7.0\\microsoft.build.tasks.core.17.7.0.nupkg.sha512",
     "C:\\Users\\Dell\\.nuget\\packages\\microsoft.build.utilities.core\\17.7.0\\microsoft.build.utilities.core.17.7.0.nupkg.sha512",
-    "C:\\Users\\Dell\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
+    "C:\\Users\\Dell\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\Dell\\.nuget\\packages\\microsoft.data.sqlclient\\2.1.4\\microsoft.data.sqlclient.2.1.4.nupkg.sha512",
     "C:\\Users\\Dell\\.nuget\\packages\\microsoft.data.sqlclient.sni.runtime\\2.1.1\\microsoft.data.sqlclient.sni.runtime.2.1.1.nupkg.sha512",
     "C:\\Users\\Dell\\.nuget\\packages\\microsoft.entityframeworkcore\\6.0.18\\microsoft.entityframeworkcore.6.0.18.nupkg.sha512",

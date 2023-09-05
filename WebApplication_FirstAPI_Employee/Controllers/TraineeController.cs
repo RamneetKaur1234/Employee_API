@@ -2,7 +2,7 @@
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using WebApplication_FirstAPI_Employee.Models;
-using WebApplication_FirstAPI_Employee.Repository.iRepository;
+using WebApplication_FirstAPI_Employee.Repository.IRepository;
 
 namespace WebApplication_FirstAPI_Employee.Controllers
 {

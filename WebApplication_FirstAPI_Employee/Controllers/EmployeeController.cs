@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.VisualBasic;
 using WebApplication_FirstAPI_Employee.Data;
 using WebApplication_FirstAPI_Employee.Models;
-using WebApplication_FirstAPI_Employee.Repository.iRepository;
+using WebApplication_FirstAPI_Employee.Repository.IRepository;
 
 namespace WebApplication_FirstAPI_Employee.Controllers
 {

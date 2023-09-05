@@ -8,8 +8,9 @@ using Swashbuckle.AspNetCore.SwaggerGen;
 using System.Text;
 using WebApplication_FirstAPI_Employee;
 using WebApplication_FirstAPI_Employee.Data;
+using WebApplication_FirstAPI_Employee.DTOMapping;
 using WebApplication_FirstAPI_Employee.Repository;
-using WebApplication_FirstAPI_Employee.Repository.iRepository;
+using WebApplication_FirstAPI_Employee.Repository.IRepository;
 using static System.Net.Mime.MediaTypeNames;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -20,6 +21,10 @@ builder.Services.AddDbContext<ApplicationDbContext>(options => options.UseSqlSer
 builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 builder.Services.AddScoped<IUserRepository, UserRepository>();
 builder.Services.AddTransient<IConfigureOptions<SwaggerGenOptions>, ConfigureSwaggerOptions>();
+//builder.Services.AddScoped<IOrganizationRepository, OrganizationRepository>();
+
+//builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
+builder.Services.AddAutoMapper(typeof(MappingProfile));
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle

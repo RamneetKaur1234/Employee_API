@@ -1,8 +1,8 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace WebApplication_FirstAPI_Employee.Models
+namespace WebApplication_FirstAPI_Employee.Models.DTOs
 {
-    public class Trainee
+    public class TraineeDTO
     {
         public int Id { get; set; }
         //[Required(ErrorMessage = "This Field Is Required...!!")]
@@ -13,7 +13,5 @@ namespace WebApplication_FirstAPI_Employee.Models
         public string Email { get; set; }
         [Required(ErrorMessage = "This Field Is Required...!!")]
         public int Stipend { get; set; }
-        public ICollection<OrganTrainee> OrganTrainees { get; set; }
-
     }
 }
