@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Dell\\Desktop\\New folder (2)\\Employee_API-61de5cb0c91d953a0f829852251c275fe6476605\\WebApplication_FirstAPI_Employee\\WebApplication_FirstAPI_Employee.csproj": {}
+    "C:\\Users\\Dell\\Desktop\\Final\\Employee_API-61de5cb0c91d953a0f829852251c275fe6476605\\WebApplication_FirstAPI_Employee\\WebApplication_FirstAPI_Employee.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Dell\\Desktop\\New folder (2)\\Employee_API-61de5cb0c91d953a0f829852251c275fe6476605\\WebApplication_FirstAPI_Employee\\WebApplication_FirstAPI_Employee.csproj": {
+    "C:\\Users\\Dell\\Desktop\\Final\\Employee_API-61de5cb0c91d953a0f829852251c275fe6476605\\WebApplication_FirstAPI_Employee\\WebApplication_FirstAPI_Employee.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Dell\\Desktop\\New folder (2)\\Employee_API-61de5cb0c91d953a0f829852251c275fe6476605\\WebApplication_FirstAPI_Employee\\WebApplication_FirstAPI_Employee.csproj",
+        "projectUniqueName": "C:\\Users\\Dell\\Desktop\\Final\\Employee_API-61de5cb0c91d953a0f829852251c275fe6476605\\WebApplication_FirstAPI_Employee\\WebApplication_FirstAPI_Employee.csproj",
         "projectName": "WebApplication_FirstAPI_Employee",
-        "projectPath": "C:\\Users\\Dell\\Desktop\\New folder (2)\\Employee_API-61de5cb0c91d953a0f829852251c275fe6476605\\WebApplication_FirstAPI_Employee\\WebApplication_FirstAPI_Employee.csproj",
+        "projectPath": "C:\\Users\\Dell\\Desktop\\Final\\Employee_API-61de5cb0c91d953a0f829852251c275fe6476605\\WebApplication_FirstAPI_Employee\\WebApplication_FirstAPI_Employee.csproj",
         "packagesPath": "C:\\Users\\Dell\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Dell\\Desktop\\New folder (2)\\Employee_API-61de5cb0c91d953a0f829852251c275fe6476605\\WebApplication_FirstAPI_Employee\\obj\\",
+        "outputPath": "C:\\Users\\Dell\\Desktop\\Final\\Employee_API-61de5cb0c91d953a0f829852251c275fe6476605\\WebApplication_FirstAPI_Employee\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
