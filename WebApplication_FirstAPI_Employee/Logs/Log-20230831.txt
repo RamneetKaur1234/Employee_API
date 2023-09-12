@@ -1,0 +1,92 @@
+2023-08-31T14:38:37.2675783-07:00  [INF] User profile is available. Using '"C:\Users\Dell\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest. (7ac5e29c)
+2023-08-31T14:38:39.8749692-07:00  [INF] Now listening on: "https://localhost:7084" (d826f4b8)
+2023-08-31T14:38:39.8778703-07:00  [INF] Now listening on: "http://localhost:5133" (d826f4b8)
+2023-08-31T14:38:39.8997007-07:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-08-31T14:38:39.9028716-07:00  [INF] Hosting environment: "Development" (c3307c92)
+2023-08-31T14:38:39.9063126-07:00  [INF] Content root path: "G:\API'S\WebApplication_FirstAPI_Employee\WebApplication_FirstAPI_Employee\" (b5d60022)
+2023-08-31T14:38:49.8350634-07:00 0HMTADAI2JVKL:00000001 [INF] Request starting HTTP/2 GET https://localhost:7084/swagger/index.html - - (ca22a1cb)
+2023-08-31T14:38:54.4980096-07:00 0HMTADAI2JVKL:00000001 [INF] Request finished HTTP/2 GET https://localhost:7084/swagger/index.html - - - 200 - text/html;charset=utf-8 4713.8979ms (791a596a)
+2023-08-31T14:38:54.6871822-07:00 0HMTADAI2JVKL:00000003 [INF] Request starting HTTP/2 GET https://localhost:7084/_framework/aspnetcore-browser-refresh.js - - (ca22a1cb)
+2023-08-31T14:38:54.7018463-07:00 0HMTADAI2JVKL:00000005 [INF] Request starting HTTP/2 GET https://localhost:7084/_vs/browserLink - - (ca22a1cb)
+2023-08-31T14:38:54.7211305-07:00 0HMTADAI2JVKL:00000003 [INF] Request finished HTTP/2 GET https://localhost:7084/_framework/aspnetcore-browser-refresh.js - - - 200 12034 application/javascript;+charset=utf-8 57.5442ms (791a596a)
+2023-08-31T14:38:54.9089121-07:00 0HMTADAI2JVKL:00000005 [INF] Request finished HTTP/2 GET https://localhost:7084/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 207.7806ms (791a596a)
+2023-08-31T14:38:55.0156336-07:00 0HMTADAI2JVKL:00000007 [INF] Request starting HTTP/2 GET https://localhost:7084/swagger/v1/swagger.json - - (ca22a1cb)
+2023-08-31T14:38:57.0855857-07:00 0HMTADAI2JVKL:00000007 [INF] Request finished HTTP/2 GET https://localhost:7084/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 2068.2966ms (791a596a)
+2023-08-31T14:39:26.1779626-07:00 0HMTADAI2JVKM:00000001 [INF] Request starting HTTP/2 POST https://localhost:7084/api/user/Authenticate application/json 57 (ca22a1cb)
+2023-08-31T14:39:26.2052315-07:00 0HMTADAI2JVKM:00000001 [INF] Request:
+Protocol: HTTP/2
+Method: POST
+Scheme: https
+PathBase: 
+Path: /api/user/Authenticate
+Accept: */*
+Host: localhost:7084
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36 Edg/116.0.1938.62
+:method: [Redacted]
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Content-Type: application/json
+Origin: [Redacted]
+Referer: [Redacted]
+Content-Length: 57
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted] (893de8da)
+2023-08-31T14:39:26.8526684-07:00 0HMTADAI2JVKM:00000001 [INF] Executing endpoint '"WebApplication_FirstAPI_Employee.Controllers.UserController.Authenticate (WebApplication_FirstAPI_Employee)"' (500cc934)
+2023-08-31T14:39:27.0167760-07:00 0HMTADAI2JVKM:00000001 [INF] Route matched with "{action = \"Authenticate\", controller = \"User\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Authenticate(WebApplication_FirstAPI_Employee.Models.ViewModels.UserVM)" on controller "WebApplication_FirstAPI_Employee.Controllers.UserController" ("WebApplication_FirstAPI_Employee"). (122b2fdf)
+2023-08-31T14:39:28.0322990-07:00 0HMTADAI2JVKM:00000001 [INF] RequestBody: "{
+  \"username\": \"ramneet\",
+  \"password\": \"Ramneet@123#\"
+}" (6d42d084)
+2023-08-31T14:39:31.6594489-07:00 0HMTADAI2JVKM:00000001 [INF] Entity Framework Core "6.0.18" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer":"6.0.18"' with options: "None" (d2805559)
+2023-08-31T14:39:37.6830500-07:00 0HMTADAI2JVKM:00000001 [INF] Executed DbCommand ("427"ms) [Parameters=["@__username_0='?' (Size = 4000), @__password_1='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[ConfirmPassword], [u].[Password], [u].[Role], [u].[Username]
+FROM [Users] AS [u]
+WHERE ([u].[Username] = @__username_0) AND ([u].[Password] = @__password_1)" (0723d8ff)
+2023-08-31T14:39:38.5653251-07:00 0HMTADAI2JVKM:00000001 [INF] User Login'ed...!! (5a73eec5)
+2023-08-31T14:39:38.6009586-07:00 0HMTADAI2JVKM:00000001 [INF] Executing "OkObjectResult", writing value of type '"WebApplication_FirstAPI_Employee.Models.User"'. (605b4265)
+2023-08-31T14:39:38.6441364-07:00 0HMTADAI2JVKM:00000001 [INF] Response:
+StatusCode: 200
+Content-Type: application/json; charset=utf-8 (999214c4)
+2023-08-31T14:39:38.6741235-07:00 0HMTADAI2JVKM:00000001 [INF] Executed action "WebApplication_FirstAPI_Employee.Controllers.UserController.Authenticate (WebApplication_FirstAPI_Employee)" in 11633.0113ms (afa2e885)
+2023-08-31T14:39:38.6798306-07:00 0HMTADAI2JVKM:00000001 [INF] Executed endpoint '"WebApplication_FirstAPI_Employee.Controllers.UserController.Authenticate (WebApplication_FirstAPI_Employee)"' (99874f2b)
+2023-08-31T14:39:38.6849758-07:00 0HMTADAI2JVKM:00000001 [INF] ResponseBody: "{\"id\":9,\"username\":\"ramneet\",\"password\":\"\",\"confirmPassword\":\"Ramneet@123#\",\"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiOSIsInJvbGUiOiJBZG1pbiIsIm5iZiI6MTY5MzUxNzk3NywiZXhwIjoxNjk0MTIyNzc3LCJpYXQiOjE2OTM1MTc5Nzd9.dUir7goNwM25j9cnHj-Ky3QETnyfRaPRAUMK8xyakBo\",\"role\":\"Admin\"}" (c7a8e6fd)
+2023-08-31T14:39:38.7372255-07:00 0HMTADAI2JVKM:00000001 [INF] Request finished HTTP/2 POST https://localhost:7084/api/user/Authenticate application/json 57 - 200 - application/json;+charset=utf-8 12560.6301ms (791a596a)
+2023-08-31T14:40:33.3887817-07:00 0HMTADAI2JVKN:00000001 [INF] Request starting HTTP/2 GET https://localhost:7084/api/employee - - (ca22a1cb)
+2023-08-31T14:40:33.3968982-07:00 0HMTADAI2JVKN:00000001 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /api/employee
+Accept: */*
+Host: localhost:7084
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36 Edg/116.0.1938.62
+:method: [Redacted]
+Accept-Encoding: gzip, deflate, br, zsdch
+Accept-Language: en-US,en;q=0.9
+Authorization: [Redacted]
+Referer: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted] (893de8da)
+2023-08-31T14:40:33.6729328-07:00 0HMTADAI2JVKN:00000001 [INF] Executing endpoint '"WebApplication_FirstAPI_Employee.Controllers.EmployeeController.GetEmployees (WebApplication_FirstAPI_Employee)"' (500cc934)
+2023-08-31T14:40:33.7049406-07:00 0HMTADAI2JVKN:00000001 [INF] Route matched with "{action = \"GetEmployees\", controller = \"Employee\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetEmployees()" on controller "WebApplication_FirstAPI_Employee.Controllers.EmployeeController" ("WebApplication_FirstAPI_Employee"). (122b2fdf)
+2023-08-31T14:40:33.8374355-07:00 0HMTADAI2JVKN:00000001 [INF] Entity Framework Core "6.0.18" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer":"6.0.18"' with options: "None" (d2805559)
+2023-08-31T14:40:34.4679328-07:00 0HMTADAI2JVKN:00000001 [INF] Executed DbCommand ("155"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [e].[Id], [e].[Address], [e].[EMail], [e].[Name], [e].[Salary]
+FROM [Employees] AS [e]" (0723d8ff)
+2023-08-31T14:40:34.5884173-07:00 0HMTADAI2JVKN:00000001 [INF] Executing "OkObjectResult", writing value of type '"System.Collections.Generic.List`1[[WebApplication_FirstAPI_Employee.Models.Employee, WebApplication_FirstAPI_Employee, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (605b4265)
+2023-08-31T14:40:34.6291388-07:00 0HMTADAI2JVKN:00000001 [INF] Response:
+StatusCode: 200
+Content-Type: application/json; charset=utf-8 (999214c4)
+2023-08-31T14:40:34.6387772-07:00 0HMTADAI2JVKN:00000001 [INF] Executed action "WebApplication_FirstAPI_Employee.Controllers.EmployeeController.GetEmployees (WebApplication_FirstAPI_Employee)" in 927.1107ms (afa2e885)
+2023-08-31T14:40:34.6461507-07:00 0HMTADAI2JVKN:00000001 [INF] Executed endpoint '"WebApplication_FirstAPI_Employee.Controllers.EmployeeController.GetEmployees (WebApplication_FirstAPI_Employee)"' (99874f2b)
+2023-08-31T14:40:34.6561032-07:00 0HMTADAI2JVKN:00000001 [INF] ResponseBody: "[{\"id\":1,\"name\":\"Rimi\",\"address\":\"Dhahe\",\"salary\":5356,\"eMail\":\"rimi@gmail.com\"},{\"id\":9,\"name\":\"Abhi\",\"address\":\"NayaGaon\",\"salary\":4576,\"eMail\":\"abhi@gmail.com\"},{\"id\":10,\"name\":\"Shivangi\",\"address\":\"Mohali\",\"salary\":7869,\"eMail\":\"shivi@gmail.com\"}]" (c7a8e6fd)
+2023-08-31T14:40:34.6720272-07:00 0HMTADAI2JVKN:00000001 [INF] Request finished HTTP/2 GET https://localhost:7084/api/employee - - - 200 - application/json;+charset=utf-8 1273.7932ms (791a596a)
