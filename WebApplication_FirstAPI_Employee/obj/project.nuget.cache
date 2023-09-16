@@ -1,11 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "f5VFp1ZXzKyJU7rCoCxGIHiwtHsMAfZfrSvxlHxk+fONwSZqYaEuO3lnLXwNsEN75EynwYZ2vWiwLMYwJ9c3Dg==",
+  "dgSpecHash": "XGQZ7D7UQ82QcRuggDe44qldDW1zA16jmASwG1gQqNGKpgv1FBzMajXJ2EQlsvKlp/HEg9Bjg1PiEQHYqE9/qg==",
   "success": true,
   "projectFilePath": "C:\\Users\\Dell\\Desktop\\Final\\Employee_API-61de5cb0c91d953a0f829852251c275fe6476605\\WebApplication_FirstAPI_Employee\\WebApplication_FirstAPI_Employee.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Dell\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\Dell\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
+    "C:\\Users\\Dell\\.nuget\\packages\\fluentvalidation\\11.5.1\\fluentvalidation.11.5.1.nupkg.sha512",
+    "C:\\Users\\Dell\\.nuget\\packages\\fluentvalidation.aspnetcore\\11.3.0\\fluentvalidation.aspnetcore.11.3.0.nupkg.sha512",
+    "C:\\Users\\Dell\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\11.5.1\\fluentvalidation.dependencyinjectionextensions.11.5.1.nupkg.sha512",
     "C:\\Users\\Dell\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Dell\\.nuget\\packages\\microsoft.aspnet.webapi.client\\5.2.9\\microsoft.aspnet.webapi.client.5.2.9.nupkg.sha512",
     "C:\\Users\\Dell\\.nuget\\packages\\microsoft.aspnet.webapi.core\\5.2.9\\microsoft.aspnet.webapi.core.5.2.9.nupkg.sha512",

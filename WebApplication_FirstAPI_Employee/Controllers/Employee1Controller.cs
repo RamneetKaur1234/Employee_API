@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore.Metadata.Conventions;
@@ -10,6 +11,7 @@ namespace WebApplication_FirstAPI_Employee.Controllers
 {
     [Route("api/employee1")]
     [ApiController]
+    [Authorize]
     public class Employee1Controller : ControllerBase
     {
         private readonly IUnitOfWork _unitOfWork;

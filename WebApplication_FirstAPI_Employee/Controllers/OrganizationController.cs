@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using WebApplication_FirstAPI_Employee.Models;
@@ -9,6 +10,7 @@ namespace WebApplication_FirstAPI_Employee.Controllers
 {
     [Route("api/organization")]
     [ApiController]
+    [Authorize]
     public class OrganizationController : ControllerBase
     {
         private readonly IUnitOfWork _unitOfWork;

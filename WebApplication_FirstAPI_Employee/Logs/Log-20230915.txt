@@ -1,0 +1,786 @@
+2023-09-15T10:20:56.1168324-07:00  [INF] User profile is available. Using '"C:\Users\Dell\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest. (7ac5e29c)
+2023-09-15T10:20:58.5185863-07:00  [INF] Now listening on: "https://localhost:7084" (d826f4b8)
+2023-09-15T10:20:58.5224922-07:00  [INF] Now listening on: "http://localhost:5133" (d826f4b8)
+2023-09-15T10:20:58.5436736-07:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-09-15T10:20:58.5471589-07:00  [INF] Hosting environment: "Development" (c3307c92)
+2023-09-15T10:20:58.5501464-07:00  [INF] Content root path: "C:\Users\Dell\Desktop\Final\Employee_API-61de5cb0c91d953a0f829852251c275fe6476605\WebApplication_FirstAPI_Employee\" (b5d60022)
+2023-09-15T10:21:09.8945822-07:00 0HMTM20GASC1J:0000000F [INF] Request starting HTTP/2 GET https://localhost:7084/swagger - - (ca22a1cb)
+2023-09-15T10:21:10.1645487-07:00 0HMTM20GASC1J:00000011 [INF] Request starting HTTP/2 GET https://localhost:7084/swagger/index.html - - (ca22a1cb)
+2023-09-15T10:21:10.4367734-07:00 0HMTM20GASC1J:0000000F [INF] Request finished HTTP/2 GET https://localhost:7084/swagger - - - 0 - - 544.1322ms (791a596a)
+2023-09-15T10:21:13.7273122-07:00 0HMTM20GASC1J:00000011 [INF] Request finished HTTP/2 GET https://localhost:7084/swagger/index.html - - - 200 - text/html;charset=utf-8 3548.8107ms (791a596a)
+2023-09-15T10:21:14.7163781-07:00 0HMTM20GASC1L:00000011 [INF] Request starting HTTP/2 GET https://localhost:7084/_vs/browserLink - - (ca22a1cb)
+2023-09-15T10:21:14.7209151-07:00 0HMTM20GASC1L:0000000F [INF] Request starting HTTP/2 GET https://localhost:7084/_framework/aspnetcore-browser-refresh.js - - (ca22a1cb)
+2023-09-15T10:21:14.7936182-07:00 0HMTM20GASC1L:0000000F [INF] Request finished HTTP/2 GET https://localhost:7084/_framework/aspnetcore-browser-refresh.js - - - 200 12034 application/javascript;+charset=utf-8 78.2631ms (791a596a)
+2023-09-15T10:21:15.6317432-07:00 0HMTM20GASC1L:00000013 [INF] Request starting HTTP/2 GET https://localhost:7084/swagger/favicon-16x16.png - - (ca22a1cb)
+2023-09-15T10:21:15.6715295-07:00 0HMTM20GASC1L:00000011 [INF] Request finished HTTP/2 GET https://localhost:7084/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 955.9968ms (791a596a)
+2023-09-15T10:21:15.8009024-07:00 0HMTM20GASC1L:00000013 [INF] Sending file. Request path: '"/favicon-16x16.png"'. Physical path: '"N/A"' (27b0a520)
+2023-09-15T10:21:15.8049594-07:00 0HMTM20GASC1L:00000013 [INF] Request finished HTTP/2 GET https://localhost:7084/swagger/favicon-16x16.png - - - 0 665 image/png 185.4631ms (791a596a)
+2023-09-15T10:21:16.2592734-07:00 0HMTM20GASC1L:00000015 [INF] Request starting HTTP/2 GET https://localhost:7084/swagger/v1/swagger.json - - (ca22a1cb)
+2023-09-15T10:21:18.8330598-07:00 0HMTM20GASC1L:00000015 [INF] Request finished HTTP/2 GET https://localhost:7084/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 2563.9379ms (791a596a)
+2023-09-15T10:27:00.1678016-07:00 0HMTM20GASC1M:0000000F [INF] Request starting HTTP/2 POST https://localhost:7084/api/employee1 application/json 84 (ca22a1cb)
+2023-09-15T10:27:00.2285286-07:00 0HMTM20GASC1M:0000000F [INF] Request:
+Protocol: HTTP/2
+Method: POST
+Scheme: https
+PathBase: 
+Path: /api/employee1
+Accept: */*
+Host: localhost:7084
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/116.0
+:method: [Redacted]
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Content-Type: application/json
+Origin: [Redacted]
+Referer: [Redacted]
+TE: trailers
+Content-Length: 84
+sec-fetch-dest: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-site: [Redacted] (893de8da)
+2023-09-15T10:27:00.5297072-07:00 0HMTM20GASC1M:0000000F [INF] Executing endpoint '"WebApplication_FirstAPI_Employee.Controllers.Employee1Controller.CreateEmployee (WebApplication_FirstAPI_Employee)"' (500cc934)
+2023-09-15T10:27:00.6414984-07:00 0HMTM20GASC1M:0000000F [INF] Route matched with "{action = \"CreateEmployee\", controller = \"Employee1\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult CreateEmployee(Int32, WebApplication_FirstAPI_Employee.Models.DTOs.Employee1DTO)" on controller "WebApplication_FirstAPI_Employee.Controllers.Employee1Controller" ("WebApplication_FirstAPI_Employee"). (122b2fdf)
+2023-09-15T10:27:04.0590528-07:00 0HMTM20GASC1M:0000000F [INF] Entity Framework Core "6.0.18" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer":"6.0.18"' with options: "None" (d2805559)
+2023-09-15T10:27:04.5633370-07:00 0HMTM20GASC1M:0000000F [INF] RequestBody: "{
+  \"name\": \"g\",
+  \"address\": \"ghfj\",
+  \"salary\": 524,
+  \"eMail\": \"user@gmail.com\"
+}" (6d42d084)
+2023-09-15T10:27:04.8339844-07:00 0HMTM20GASC1M:0000000F [INF] Executing "BadRequestObjectResult", writing value of type '"Microsoft.AspNetCore.Mvc.SerializableError"'. (605b4265)
+2023-09-15T10:27:04.8471279-07:00 0HMTM20GASC1M:0000000F [INF] Response:
+StatusCode: 400
+Content-Type: application/json; charset=utf-8 (999214c4)
+2023-09-15T10:27:04.8792117-07:00 0HMTM20GASC1M:0000000F [INF] Executed action "WebApplication_FirstAPI_Employee.Controllers.Employee1Controller.CreateEmployee (WebApplication_FirstAPI_Employee)" in 4206.2783ms (afa2e885)
+2023-09-15T10:27:04.8859913-07:00 0HMTM20GASC1M:0000000F [INF] Executed endpoint '"WebApplication_FirstAPI_Employee.Controllers.Employee1Controller.CreateEmployee (WebApplication_FirstAPI_Employee)"' (99874f2b)
+2023-09-15T10:27:04.9634641-07:00 0HMTM20GASC1M:0000000F [INF] ResponseBody: "{\"Name\":[\"'Name' must be between 2 and 10 characters. You entered 1 characters.\"]}" (c7a8e6fd)
+2023-09-15T10:27:05.0797642-07:00 0HMTM20GASC1M:0000000F [INF] Request finished HTTP/2 POST https://localhost:7084/api/employee1 application/json 84 - 400 - application/json;+charset=utf-8 4861.6590ms (791a596a)
+2023-09-15T10:27:28.8704793-07:00 0HMTM20GASC1M:00000011 [INF] Request starting HTTP/2 POST https://localhost:7084/api/employee1 application/json 106 (ca22a1cb)
+2023-09-15T10:27:28.8900826-07:00 0HMTM20GASC1M:00000011 [INF] Request:
+Protocol: HTTP/2
+Method: POST
+Scheme: https
+PathBase: 
+Path: /api/employee1
+Accept: */*
+Host: localhost:7084
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/116.0
+:method: [Redacted]
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Content-Type: application/json
+Origin: [Redacted]
+Referer: [Redacted]
+TE: trailers
+Content-Length: 106
+sec-fetch-dest: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-site: [Redacted] (893de8da)
+2023-09-15T10:27:28.9035304-07:00 0HMTM20GASC1M:00000011 [INF] Executing endpoint '"WebApplication_FirstAPI_Employee.Controllers.Employee1Controller.CreateEmployee (WebApplication_FirstAPI_Employee)"' (500cc934)
+2023-09-15T10:27:28.9120586-07:00 0HMTM20GASC1M:00000011 [INF] Route matched with "{action = \"CreateEmployee\", controller = \"Employee1\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult CreateEmployee(Int32, WebApplication_FirstAPI_Employee.Models.DTOs.Employee1DTO)" on controller "WebApplication_FirstAPI_Employee.Controllers.Employee1Controller" ("WebApplication_FirstAPI_Employee"). (122b2fdf)
+2023-09-15T10:27:29.0281763-07:00 0HMTM20GASC1M:00000011 [INF] Entity Framework Core "6.0.18" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer":"6.0.18"' with options: "None" (d2805559)
+2023-09-15T10:27:29.0357177-07:00 0HMTM20GASC1M:00000011 [INF] RequestBody: "{
+  \"name\": \"gghjgfddghjgfhjkjhgfhgf\",
+  \"address\": \"ghfj\",
+  \"salary\": 524,
+  \"eMail\": \"user@gmail.com\"
+}" (6d42d084)
+2023-09-15T10:27:29.0452601-07:00 0HMTM20GASC1M:00000011 [INF] Executing "BadRequestObjectResult", writing value of type '"Microsoft.AspNetCore.Mvc.SerializableError"'. (605b4265)
+2023-09-15T10:27:29.0517102-07:00 0HMTM20GASC1M:00000011 [INF] Response:
+StatusCode: 400
+Content-Type: application/json; charset=utf-8 (999214c4)
+2023-09-15T10:27:29.0596936-07:00 0HMTM20GASC1M:00000011 [INF] Executed action "WebApplication_FirstAPI_Employee.Controllers.Employee1Controller.CreateEmployee (WebApplication_FirstAPI_Employee)" in 139.9475ms (afa2e885)
+2023-09-15T10:27:29.0635926-07:00 0HMTM20GASC1M:00000011 [INF] Executed endpoint '"WebApplication_FirstAPI_Employee.Controllers.Employee1Controller.CreateEmployee (WebApplication_FirstAPI_Employee)"' (99874f2b)
+2023-09-15T10:27:29.0701820-07:00 0HMTM20GASC1M:00000011 [INF] ResponseBody: "{\"Name\":[\"'Name' must be between 2 and 10 characters. You entered 23 characters.\"]}" (c7a8e6fd)
+2023-09-15T10:27:29.0867746-07:00 0HMTM20GASC1M:00000011 [INF] Request finished HTTP/2 POST https://localhost:7084/api/employee1 application/json 106 - 400 - application/json;+charset=utf-8 207.2493ms (791a596a)
+2023-09-15T10:43:35.4381887-07:00  [INF] User profile is available. Using '"C:\Users\Dell\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest. (7ac5e29c)
+2023-09-15T10:43:36.7373020-07:00  [INF] Now listening on: "https://localhost:7084" (d826f4b8)
+2023-09-15T10:43:36.7641212-07:00  [INF] Now listening on: "http://localhost:5133" (d826f4b8)
+2023-09-15T10:43:36.7903154-07:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-09-15T10:43:36.7942350-07:00  [INF] Hosting environment: "Development" (c3307c92)
+2023-09-15T10:43:36.7989362-07:00  [INF] Content root path: "C:\Users\Dell\Desktop\Final\Employee_API-61de5cb0c91d953a0f829852251c275fe6476605\WebApplication_FirstAPI_Employee\" (b5d60022)
+2023-09-15T10:43:46.9442107-07:00 0HMTM2D52QJQV:0000000F [INF] Request starting HTTP/2 GET https://localhost:7084/swagger/index.html - - (ca22a1cb)
+2023-09-15T10:43:48.7947850-07:00 0HMTM2D52QJQV:0000000F [INF] Request finished HTTP/2 GET https://localhost:7084/swagger/index.html - - - 200 - text/html;charset=utf-8 1859.2452ms (791a596a)
+2023-09-15T10:43:49.3310047-07:00 0HMTM2D52QJQV:00000011 [INF] Request starting HTTP/2 GET https://localhost:7084/_framework/aspnetcore-browser-refresh.js - - (ca22a1cb)
+2023-09-15T10:43:49.3325043-07:00 0HMTM2D52QJQV:00000013 [INF] Request starting HTTP/2 GET https://localhost:7084/_vs/browserLink - - (ca22a1cb)
+2023-09-15T10:43:49.3864535-07:00 0HMTM2D52QJQV:00000011 [INF] Request finished HTTP/2 GET https://localhost:7084/_framework/aspnetcore-browser-refresh.js - - - 200 12034 application/javascript;+charset=utf-8 96.0934ms (791a596a)
+2023-09-15T10:43:49.5526616-07:00 0HMTM2D52QJQV:00000013 [INF] Request finished HTTP/2 GET https://localhost:7084/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 226.6905ms (791a596a)
+2023-09-15T10:43:50.4024643-07:00 0HMTM2D52QJQV:00000015 [INF] Request starting HTTP/2 GET https://localhost:7084/swagger/v1/swagger.json - - (ca22a1cb)
+2023-09-15T10:43:52.6533880-07:00 0HMTM2D52QJQV:00000015 [INF] Request finished HTTP/2 GET https://localhost:7084/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 2258.6572ms (791a596a)
+2023-09-15T10:46:15.1962550-07:00 0HMTM2D52QJQV:00000017 [INF] Request starting HTTP/2 POST https://localhost:7084/api/employee1?deptId=1 application/json 83 (ca22a1cb)
+2023-09-15T10:46:15.2203192-07:00 0HMTM2D52QJQV:00000017 [INF] Request:
+Protocol: HTTP/2
+Method: POST
+Scheme: https
+PathBase: 
+Path: /api/employee1
+Accept: */*
+Host: localhost:7084
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/116.0
+:method: [Redacted]
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Content-Type: application/json
+Origin: [Redacted]
+Referer: [Redacted]
+TE: trailers
+Content-Length: 83
+sec-fetch-dest: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-site: [Redacted] (893de8da)
+2023-09-15T10:46:15.4434940-07:00 0HMTM2D52QJQV:00000017 [INF] Executing endpoint '"WebApplication_FirstAPI_Employee.Controllers.Employee1Controller.CreateEmployee (WebApplication_FirstAPI_Employee)"' (500cc934)
+2023-09-15T10:46:15.5354838-07:00 0HMTM2D52QJQV:00000017 [INF] Route matched with "{action = \"CreateEmployee\", controller = \"Employee1\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult CreateEmployee(Int32, WebApplication_FirstAPI_Employee.Models.DTOs.Employee1DTO)" on controller "WebApplication_FirstAPI_Employee.Controllers.Employee1Controller" ("WebApplication_FirstAPI_Employee"). (122b2fdf)
+2023-09-15T10:46:18.4055630-07:00 0HMTM2D52QJQV:00000017 [INF] Entity Framework Core "6.0.18" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer":"6.0.18"' with options: "None" (d2805559)
+2023-09-15T10:46:18.8914182-07:00 0HMTM2D52QJQV:00000017 [INF] RequestBody: "{
+  \"name\": \"\",
+  \"address\": \"hjg\",
+  \"salary\": 1525,
+  \"eMail\": \"user@gmail.com\"
+}" (6d42d084)
+2023-09-15T10:46:19.0532442-07:00 0HMTM2D52QJQV:00000017 [INF] Executing "BadRequestObjectResult", writing value of type '"Microsoft.AspNetCore.Mvc.SerializableError"'. (605b4265)
+2023-09-15T10:46:19.0637576-07:00 0HMTM2D52QJQV:00000017 [INF] Response:
+StatusCode: 400
+Content-Type: application/json; charset=utf-8 (999214c4)
+2023-09-15T10:46:19.0933514-07:00 0HMTM2D52QJQV:00000017 [INF] Executed action "WebApplication_FirstAPI_Employee.Controllers.Employee1Controller.CreateEmployee (WebApplication_FirstAPI_Employee)" in 3527.8342ms (afa2e885)
+2023-09-15T10:46:19.0967344-07:00 0HMTM2D52QJQV:00000017 [INF] Executed endpoint '"WebApplication_FirstAPI_Employee.Controllers.Employee1Controller.CreateEmployee (WebApplication_FirstAPI_Employee)"' (99874f2b)
+2023-09-15T10:46:19.1010247-07:00 0HMTM2D52QJQV:00000017 [INF] ResponseBody: "{\"Name\":[\"Name should not be EMPTY.. Never...!\"]}" (c7a8e6fd)
+2023-09-15T10:46:19.1270384-07:00 0HMTM2D52QJQV:00000017 [INF] Request finished HTTP/2 POST https://localhost:7084/api/employee1?deptId=1 application/json 83 - 400 - application/json;+charset=utf-8 3931.1157ms (791a596a)
+2023-09-15T10:46:31.0667139-07:00 0HMTM2D52QJQV:00000019 [INF] Request starting HTTP/2 POST https://localhost:7084/api/employee1?deptId=1 application/json 84 (ca22a1cb)
+2023-09-15T10:46:31.0788757-07:00 0HMTM2D52QJQV:00000019 [INF] Request:
+Protocol: HTTP/2
+Method: POST
+Scheme: https
+PathBase: 
+Path: /api/employee1
+Accept: */*
+Host: localhost:7084
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/116.0
+:method: [Redacted]
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Content-Type: application/json
+Origin: [Redacted]
+Referer: [Redacted]
+TE: trailers
+Content-Length: 84
+sec-fetch-dest: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-site: [Redacted] (893de8da)
+2023-09-15T10:46:31.0852394-07:00 0HMTM2D52QJQV:00000019 [INF] Executing endpoint '"WebApplication_FirstAPI_Employee.Controllers.Employee1Controller.CreateEmployee (WebApplication_FirstAPI_Employee)"' (500cc934)
+2023-09-15T10:46:31.0910021-07:00 0HMTM2D52QJQV:00000019 [INF] Route matched with "{action = \"CreateEmployee\", controller = \"Employee1\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult CreateEmployee(Int32, WebApplication_FirstAPI_Employee.Models.DTOs.Employee1DTO)" on controller "WebApplication_FirstAPI_Employee.Controllers.Employee1Controller" ("WebApplication_FirstAPI_Employee"). (122b2fdf)
+2023-09-15T10:46:31.1890030-07:00 0HMTM2D52QJQV:00000019 [INF] Entity Framework Core "6.0.18" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer":"6.0.18"' with options: "None" (d2805559)
+2023-09-15T10:46:31.1949926-07:00 0HMTM2D52QJQV:00000019 [INF] RequestBody: "{
+  \"name\": \"a\",
+  \"address\": \"hjg\",
+  \"salary\": 1525,
+  \"eMail\": \"user@gmail.com\"
+}" (6d42d084)
+2023-09-15T10:46:31.2556825-07:00 0HMTM2D52QJQV:00000019 [INF] Executing "BadRequestObjectResult", writing value of type '"Microsoft.AspNetCore.Mvc.SerializableError"'. (605b4265)
+2023-09-15T10:46:31.2601889-07:00 0HMTM2D52QJQV:00000019 [INF] Response:
+StatusCode: 400
+Content-Type: application/json; charset=utf-8 (999214c4)
+2023-09-15T10:46:31.2647742-07:00 0HMTM2D52QJQV:00000019 [INF] Executed action "WebApplication_FirstAPI_Employee.Controllers.Employee1Controller.CreateEmployee (WebApplication_FirstAPI_Employee)" in 169.407ms (afa2e885)
+2023-09-15T10:46:31.2736687-07:00 0HMTM2D52QJQV:00000019 [INF] Executed endpoint '"WebApplication_FirstAPI_Employee.Controllers.Employee1Controller.CreateEmployee (WebApplication_FirstAPI_Employee)"' (99874f2b)
+2023-09-15T10:46:31.2773538-07:00 0HMTM2D52QJQV:00000019 [INF] ResponseBody: "{\"Name\":[\"'Name' must be between 2 and 10 characters. You entered 1 characters.\"]}" (c7a8e6fd)
+2023-09-15T10:46:31.2826170-07:00 0HMTM2D52QJQV:00000019 [INF] Request finished HTTP/2 POST https://localhost:7084/api/employee1?deptId=1 application/json 84 - 400 - application/json;+charset=utf-8 228.3451ms (791a596a)
+2023-09-15T10:46:43.3677457-07:00 0HMTM2D52QJQV:0000001B [INF] Request starting HTTP/2 POST https://localhost:7084/api/employee1?deptId=1 application/json 110 (ca22a1cb)
+2023-09-15T10:46:43.3725331-07:00 0HMTM2D52QJQV:0000001B [INF] Request:
+Protocol: HTTP/2
+Method: POST
+Scheme: https
+PathBase: 
+Path: /api/employee1
+Accept: */*
+Host: localhost:7084
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/116.0
+:method: [Redacted]
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Content-Type: application/json
+Origin: [Redacted]
+Referer: [Redacted]
+TE: trailers
+Content-Length: 110
+sec-fetch-dest: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-site: [Redacted] (893de8da)
+2023-09-15T10:46:43.3819278-07:00 0HMTM2D52QJQV:0000001B [INF] Executing endpoint '"WebApplication_FirstAPI_Employee.Controllers.Employee1Controller.CreateEmployee (WebApplication_FirstAPI_Employee)"' (500cc934)
+2023-09-15T10:46:43.3899743-07:00 0HMTM2D52QJQV:0000001B [INF] Route matched with "{action = \"CreateEmployee\", controller = \"Employee1\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult CreateEmployee(Int32, WebApplication_FirstAPI_Employee.Models.DTOs.Employee1DTO)" on controller "WebApplication_FirstAPI_Employee.Controllers.Employee1Controller" ("WebApplication_FirstAPI_Employee"). (122b2fdf)
+2023-09-15T10:46:43.4196239-07:00 0HMTM2D52QJQV:0000001B [INF] Entity Framework Core "6.0.18" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer":"6.0.18"' with options: "None" (d2805559)
+2023-09-15T10:46:43.4265451-07:00 0HMTM2D52QJQV:0000001B [INF] RequestBody: "{
+  \"name\": \"aghgjkhgfdsfghjkjhgfdsdfghg\",
+  \"address\": \"hjg\",
+  \"salary\": 1525,
+  \"eMail\": \"user@gmail.com\"
+}" (6d42d084)
+2023-09-15T10:46:43.4317463-07:00 0HMTM2D52QJQV:0000001B [INF] Executing "BadRequestObjectResult", writing value of type '"Microsoft.AspNetCore.Mvc.SerializableError"'. (605b4265)
+2023-09-15T10:46:43.4394673-07:00 0HMTM2D52QJQV:0000001B [INF] Response:
+StatusCode: 400
+Content-Type: application/json; charset=utf-8 (999214c4)
+2023-09-15T10:46:43.4444577-07:00 0HMTM2D52QJQV:0000001B [INF] Executed action "WebApplication_FirstAPI_Employee.Controllers.Employee1Controller.CreateEmployee (WebApplication_FirstAPI_Employee)" in 49.8784ms (afa2e885)
+2023-09-15T10:46:43.4478965-07:00 0HMTM2D52QJQV:0000001B [INF] Executed endpoint '"WebApplication_FirstAPI_Employee.Controllers.Employee1Controller.CreateEmployee (WebApplication_FirstAPI_Employee)"' (99874f2b)
+2023-09-15T10:46:43.4531953-07:00 0HMTM2D52QJQV:0000001B [INF] ResponseBody: "{\"Name\":[\"'Name' must be between 2 and 10 characters. You entered 27 characters.\"]}" (c7a8e6fd)
+2023-09-15T10:46:43.4628547-07:00 0HMTM2D52QJQV:0000001B [INF] Request finished HTTP/2 POST https://localhost:7084/api/employee1?deptId=1 application/json 110 - 400 - application/json;+charset=utf-8 90.7563ms (791a596a)
+2023-09-15T10:50:29.4749492-07:00 0HMTM2D52QJR0:0000000F [INF] Request starting HTTP/2 POST https://localhost:7084/api/employee1?deptId=1 application/json 94 (ca22a1cb)
+2023-09-15T10:50:29.4822667-07:00 0HMTM2D52QJR0:0000000F [INF] Request:
+Protocol: HTTP/2
+Method: POST
+Scheme: https
+PathBase: 
+Path: /api/employee1
+Accept: */*
+Host: localhost:7084
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/116.0
+:method: [Redacted]
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Content-Type: application/json
+Origin: [Redacted]
+Referer: [Redacted]
+TE: trailers
+Content-Length: 94
+sec-fetch-dest: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-site: [Redacted] (893de8da)
+2023-09-15T10:50:29.5012629-07:00 0HMTM2D52QJR0:0000000F [INF] Executing endpoint '"WebApplication_FirstAPI_Employee.Controllers.Employee1Controller.CreateEmployee (WebApplication_FirstAPI_Employee)"' (500cc934)
+2023-09-15T10:50:29.5072589-07:00 0HMTM2D52QJR0:0000000F [INF] Route matched with "{action = \"CreateEmployee\", controller = \"Employee1\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult CreateEmployee(Int32, WebApplication_FirstAPI_Employee.Models.DTOs.Employee1DTO)" on controller "WebApplication_FirstAPI_Employee.Controllers.Employee1Controller" ("WebApplication_FirstAPI_Employee"). (122b2fdf)
+2023-09-15T10:50:29.5155114-07:00 0HMTM2D52QJR0:0000000F [INF] Entity Framework Core "6.0.18" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer":"6.0.18"' with options: "None" (d2805559)
+2023-09-15T10:50:29.5197078-07:00 0HMTM2D52QJR0:0000000F [INF] RequestBody: "{
+  \"name\": \"aghgjkhgghg\",
+  \"address\": \"hjg\",
+  \"salary\": 1525,
+  \"eMail\": \"user@gmail.com\"
+}" (6d42d084)
+2023-09-15T10:50:29.5262909-07:00 0HMTM2D52QJR0:0000000F [INF] Executing "BadRequestObjectResult", writing value of type '"Microsoft.AspNetCore.Mvc.SerializableError"'. (605b4265)
+2023-09-15T10:50:29.5313559-07:00 0HMTM2D52QJR0:0000000F [INF] Response:
+StatusCode: 400
+Content-Type: application/json; charset=utf-8 (999214c4)
+2023-09-15T10:50:29.5359366-07:00 0HMTM2D52QJR0:0000000F [INF] Executed action "WebApplication_FirstAPI_Employee.Controllers.Employee1Controller.CreateEmployee (WebApplication_FirstAPI_Employee)" in 24.2755ms (afa2e885)
+2023-09-15T10:50:29.5425548-07:00 0HMTM2D52QJR0:0000000F [INF] Executed endpoint '"WebApplication_FirstAPI_Employee.Controllers.Employee1Controller.CreateEmployee (WebApplication_FirstAPI_Employee)"' (99874f2b)
+2023-09-15T10:50:29.5489820-07:00 0HMTM2D52QJR0:0000000F [INF] ResponseBody: "{\"Name\":[\"'Name' must be between 2 and 10 characters. You entered 11 characters.\"]}" (c7a8e6fd)
+2023-09-15T10:50:29.5537031-07:00 0HMTM2D52QJR0:0000000F [INF] Request finished HTTP/2 POST https://localhost:7084/api/employee1?deptId=1 application/json 94 - 400 - application/json;+charset=utf-8 82.8123ms (791a596a)
+2023-09-15T11:02:27.3275076-07:00  [INF] User profile is available. Using '"C:\Users\Dell\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest. (7ac5e29c)
+2023-09-15T11:02:28.2225990-07:00  [INF] Now listening on: "https://localhost:7084" (d826f4b8)
+2023-09-15T11:02:28.2477714-07:00  [INF] Now listening on: "http://localhost:5133" (d826f4b8)
+2023-09-15T11:02:28.2687376-07:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-09-15T11:02:28.2718505-07:00  [INF] Hosting environment: "Development" (c3307c92)
+2023-09-15T11:02:28.2754949-07:00  [INF] Content root path: "C:\Users\Dell\Desktop\Final\Employee_API-61de5cb0c91d953a0f829852251c275fe6476605\WebApplication_FirstAPI_Employee\" (b5d60022)
+2023-09-15T11:02:34.8861375-07:00 0HMTM2NM9JGHN:0000000F [INF] Request starting HTTP/2 GET https://localhost:7084/swagger - - (ca22a1cb)
+2023-09-15T11:02:35.7382762-07:00 0HMTM2NM9JGHN:00000011 [INF] Request starting HTTP/2 GET https://localhost:7084/swagger/index.html - - (ca22a1cb)
+2023-09-15T11:02:36.2980331-07:00 0HMTM2NM9JGHN:0000000F [INF] Request finished HTTP/2 GET https://localhost:7084/swagger - - - 0 - - 1268.6002ms (791a596a)
+2023-09-15T11:02:38.1202186-07:00 0HMTM2NM9JGHN:00000011 [INF] Request finished HTTP/2 GET https://localhost:7084/swagger/index.html - - - 200 - text/html;charset=utf-8 2356.1987ms (791a596a)
+2023-09-15T11:02:38.3865198-07:00 0HMTM2NM9JGHN:00000013 [INF] Request starting HTTP/2 GET https://localhost:7084/_framework/aspnetcore-browser-refresh.js - - (ca22a1cb)
+2023-09-15T11:02:38.4046121-07:00 0HMTM2NM9JGHN:00000013 [INF] Request finished HTTP/2 GET https://localhost:7084/_framework/aspnetcore-browser-refresh.js - - - 200 12034 application/javascript;+charset=utf-8 26.2700ms (791a596a)
+2023-09-15T11:02:38.5098076-07:00 0HMTM2NM9JGHN:00000015 [INF] Request starting HTTP/2 GET https://localhost:7084/_vs/browserLink - - (ca22a1cb)
+2023-09-15T11:02:38.8173786-07:00 0HMTM2NM9JGHN:00000015 [INF] Request finished HTTP/2 GET https://localhost:7084/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 280.5515ms (791a596a)
+2023-09-15T11:02:39.2653247-07:00 0HMTM2NM9JGHN:00000017 [INF] Request starting HTTP/2 GET https://localhost:7084/swagger/v1/swagger.json - - (ca22a1cb)
+2023-09-15T11:02:41.9675215-07:00 0HMTM2NM9JGHN:00000017 [INF] Request finished HTTP/2 GET https://localhost:7084/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 2693.5966ms (791a596a)
+2023-09-15T11:03:04.0180391-07:00 0HMTM2NM9JGHN:00000019 [INF] Request starting HTTP/2 POST https://localhost:7084/api/employee1?deptId=1 application/json 92 (ca22a1cb)
+2023-09-15T11:03:04.0547898-07:00 0HMTM2NM9JGHN:00000019 [INF] Request:
+Protocol: HTTP/2
+Method: POST
+Scheme: https
+PathBase: 
+Path: /api/employee1
+Accept: */*
+Host: localhost:7084
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/116.0
+:method: [Redacted]
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Content-Type: application/json
+Origin: [Redacted]
+Referer: [Redacted]
+TE: trailers
+Content-Length: 92
+sec-fetch-dest: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-site: [Redacted] (893de8da)
+2023-09-15T11:03:04.5972677-07:00 0HMTM2NM9JGHN:00000019 [INF] Executing endpoint '"WebApplication_FirstAPI_Employee.Controllers.Employee1Controller.CreateEmployee (WebApplication_FirstAPI_Employee)"' (500cc934)
+2023-09-15T11:03:04.8586987-07:00 0HMTM2NM9JGHN:00000019 [INF] Route matched with "{action = \"CreateEmployee\", controller = \"Employee1\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult CreateEmployee(Int32, WebApplication_FirstAPI_Employee.Models.DTOs.Employee1DTO)" on controller "WebApplication_FirstAPI_Employee.Controllers.Employee1Controller" ("WebApplication_FirstAPI_Employee"). (122b2fdf)
+2023-09-15T11:03:10.8436992-07:00 0HMTM2NM9JGHN:00000019 [INF] Entity Framework Core "6.0.18" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer":"6.0.18"' with options: "None" (d2805559)
+2023-09-15T11:03:11.7067385-07:00 0HMTM2NM9JGHN:00000019 [INF] RequestBody: "{
+  \"name\": \"2447541\",
+  \"address\": \"string\",
+  \"salary\": 0,
+  \"eMail\": \"user@example.com\"
+}" (6d42d084)
+2023-09-15T11:03:11.9416796-07:00 0HMTM2NM9JGHN:00000019 [INF] Executing "BadRequestObjectResult", writing value of type '"Microsoft.AspNetCore.Mvc.SerializableError"'. (605b4265)
+2023-09-15T11:03:11.9604684-07:00 0HMTM2NM9JGHN:00000019 [INF] Response:
+StatusCode: 400
+Content-Type: application/json; charset=utf-8 (999214c4)
+2023-09-15T11:03:11.9983765-07:00 0HMTM2NM9JGHN:00000019 [INF] Executed action "WebApplication_FirstAPI_Employee.Controllers.Employee1Controller.CreateEmployee (WebApplication_FirstAPI_Employee)" in 7102.6845ms (afa2e885)
+2023-09-15T11:03:12.0027174-07:00 0HMTM2NM9JGHN:00000019 [INF] Executed endpoint '"WebApplication_FirstAPI_Employee.Controllers.Employee1Controller.CreateEmployee (WebApplication_FirstAPI_Employee)"' (99874f2b)
+2023-09-15T11:03:12.0074513-07:00 0HMTM2NM9JGHN:00000019 [INF] ResponseBody: "{\"Name\":[\"Name should be all Letters...!!\"]}" (c7a8e6fd)
+2023-09-15T11:03:12.0408263-07:00 0HMTM2NM9JGHN:00000019 [INF] Request finished HTTP/2 POST https://localhost:7084/api/employee1?deptId=1 application/json 92 - 400 - application/json;+charset=utf-8 8044.2653ms (791a596a)
+2023-09-15T12:35:30.8793744-07:00  [INF] User profile is available. Using '"C:\Users\Dell\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest. (7ac5e29c)
+2023-09-15T12:35:31.7806807-07:00  [INF] Now listening on: "https://localhost:7084" (d826f4b8)
+2023-09-15T12:35:31.7841440-07:00  [INF] Now listening on: "http://localhost:5133" (d826f4b8)
+2023-09-15T12:35:31.8058808-07:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-09-15T12:35:31.8096551-07:00  [INF] Hosting environment: "Development" (c3307c92)
+2023-09-15T12:35:31.8132187-07:00  [INF] Content root path: "C:\Users\Dell\Desktop\Final\Employee_API-61de5cb0c91d953a0f829852251c275fe6476605\WebApplication_FirstAPI_Employee\" (b5d60022)
+2023-09-15T12:35:39.5289604-07:00 0HMTM4BMCNIL8:0000000F [INF] Request starting HTTP/2 GET https://localhost:7084/swagger - - (ca22a1cb)
+2023-09-15T12:35:39.7863286-07:00 0HMTM4BMCNIL8:00000011 [INF] Request starting HTTP/2 GET https://localhost:7084/swagger/index.html - - (ca22a1cb)
+2023-09-15T12:35:41.5380448-07:00 0HMTM4BMCNIL8:0000000F [INF] Request finished HTTP/2 GET https://localhost:7084/swagger - - - 0 - - 2042.6601ms (791a596a)
+2023-09-15T12:35:43.7603228-07:00 0HMTM4BMCNIL8:00000011 [INF] Request finished HTTP/2 GET https://localhost:7084/swagger/index.html - - - 200 - text/html;charset=utf-8 3998.1949ms (791a596a)
+2023-09-15T12:35:45.1330628-07:00 0HMTM4BMCNIL8:00000013 [INF] Request starting HTTP/2 GET https://localhost:7084/_framework/aspnetcore-browser-refresh.js - - (ca22a1cb)
+2023-09-15T12:35:45.1589727-07:00 0HMTM4BMCNIL8:00000013 [INF] Request finished HTTP/2 GET https://localhost:7084/_framework/aspnetcore-browser-refresh.js - - - 200 12034 application/javascript;+charset=utf-8 25.9181ms (791a596a)
+2023-09-15T12:35:45.4148335-07:00 0HMTM4BMCNIL8:00000015 [INF] Request starting HTTP/2 GET https://localhost:7084/swagger/swagger-ui.css - - (ca22a1cb)
+2023-09-15T12:35:45.4203826-07:00 0HMTM4BMCNIL8:00000017 [INF] Request starting HTTP/2 GET https://localhost:7084/_vs/browserLink - - (ca22a1cb)
+2023-09-15T12:35:45.5569281-07:00 0HMTM4BMCNIL8:00000015 [INF] Sending file. Request path: '"/swagger-ui.css"'. Physical path: '"N/A"' (27b0a520)
+2023-09-15T12:35:45.5606246-07:00 0HMTM4BMCNIL8:00000015 [INF] Request finished HTTP/2 GET https://localhost:7084/swagger/swagger-ui.css - - - 0 143632 text/css 302.7862ms (791a596a)
+2023-09-15T12:35:45.6762163-07:00 0HMTM4BMCNIL8:00000017 [INF] Request finished HTTP/2 GET https://localhost:7084/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 253.3553ms (791a596a)
+2023-09-15T12:35:47.0526355-07:00 0HMTM4BMCNIL8:00000019 [INF] Request starting HTTP/2 GET https://localhost:7084/swagger/v1/swagger.json - - (ca22a1cb)
+2023-09-15T12:35:49.0642777-07:00 0HMTM4BMCNIL8:00000019 [INF] Request finished HTTP/2 GET https://localhost:7084/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 2011.0466ms (791a596a)
+2023-09-15T12:38:35.6845349-07:00 0HMTM4BMCNIL8:0000001B [INF] Request starting HTTP/2 POST https://localhost:7084/api/user/register application/json 117 (ca22a1cb)
+2023-09-15T12:38:35.7149076-07:00 0HMTM4BMCNIL8:0000001B [INF] Request:
+Protocol: HTTP/2
+Method: POST
+Scheme: https
+PathBase: 
+Path: /api/user/register
+Accept: */*
+Host: localhost:7084
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/116.0
+:method: [Redacted]
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Content-Type: application/json
+Origin: [Redacted]
+Referer: [Redacted]
+TE: trailers
+Content-Length: 117
+sec-fetch-dest: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-site: [Redacted] (893de8da)
+2023-09-15T12:38:35.9746433-07:00 0HMTM4BMCNIL8:0000001B [INF] Executing endpoint '"WebApplication_FirstAPI_Employee.Controllers.UserController.Register (WebApplication_FirstAPI_Employee)"' (500cc934)
+2023-09-15T12:38:36.0816307-07:00 0HMTM4BMCNIL8:0000001B [INF] Route matched with "{action = \"Register\", controller = \"User\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Register(System.Collections.Generic.List`1[WebApplication_FirstAPI_Employee.Models.ViewModels.UserVModel2])" on controller "WebApplication_FirstAPI_Employee.Controllers.UserController" ("WebApplication_FirstAPI_Employee"). (122b2fdf)
+2023-09-15T12:38:39.1551625-07:00 0HMTM4BMCNIL8:0000001B [INF] Entity Framework Core "6.0.18" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer":"6.0.18"' with options: "None" (d2805559)
+2023-09-15T12:38:39.2025651-07:00 0HMTM4BMCNIL8:0000001B [INF] RequestBody: "[
+  {
+    \"userName\": \"hjghghjkl41474\",
+    \"password\": \"vjhgv\",
+    \"confirmPassword\": \"hgjyh\",
+    \"role\": \"\"
+  }
+]" (6d42d084)
+2023-09-15T12:38:39.4964802-07:00 0HMTM4BMCNIL8:0000001B [INF] Executing "BadRequestObjectResult", writing value of type '"Microsoft.AspNetCore.Mvc.SerializableError"'. (605b4265)
+2023-09-15T12:38:39.5094298-07:00 0HMTM4BMCNIL8:0000001B [INF] Response:
+StatusCode: 400
+Content-Type: application/json; charset=utf-8 (999214c4)
+2023-09-15T12:38:39.5372902-07:00 0HMTM4BMCNIL8:0000001B [INF] Executed action "WebApplication_FirstAPI_Employee.Controllers.UserController.Register (WebApplication_FirstAPI_Employee)" in 3428.6496ms (afa2e885)
+2023-09-15T12:38:39.5443842-07:00 0HMTM4BMCNIL8:0000001B [INF] Executed endpoint '"WebApplication_FirstAPI_Employee.Controllers.UserController.Register (WebApplication_FirstAPI_Employee)"' (99874f2b)
+2023-09-15T12:38:39.5519380-07:00 0HMTM4BMCNIL8:0000001B [INF] ResponseBody: "{\"[0].Role\":[\"Role should not be EMPTY....!\"],\"[0].Password\":[\"'Password' is not in the correct format.\"],\"[0].ConfirmPassword\":[\"'Confirm Password' must be equal to 'vjhgv'.\"]}" (c7a8e6fd)
+2023-09-15T12:38:39.5935519-07:00 0HMTM4BMCNIL8:0000001B [INF] Request finished HTTP/2 POST https://localhost:7084/api/user/register application/json 117 - 400 - application/json;+charset=utf-8 3921.7299ms (791a596a)
+2023-09-15T12:39:17.1989661-07:00 0HMTM4BMCNIL8:0000001D [INF] Request starting HTTP/2 POST https://localhost:7084/api/user/register application/json 124 (ca22a1cb)
+2023-09-15T12:39:17.2128376-07:00 0HMTM4BMCNIL8:0000001D [INF] Request:
+Protocol: HTTP/2
+Method: POST
+Scheme: https
+PathBase: 
+Path: /api/user/register
+Accept: */*
+Host: localhost:7084
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/116.0
+:method: [Redacted]
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Content-Type: application/json
+Origin: [Redacted]
+Referer: [Redacted]
+TE: trailers
+Content-Length: 124
+sec-fetch-dest: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-site: [Redacted] (893de8da)
+2023-09-15T12:39:17.2171556-07:00 0HMTM4BMCNIL8:0000001D [INF] Executing endpoint '"WebApplication_FirstAPI_Employee.Controllers.UserController.Register (WebApplication_FirstAPI_Employee)"' (500cc934)
+2023-09-15T12:39:17.2212054-07:00 0HMTM4BMCNIL8:0000001D [INF] Route matched with "{action = \"Register\", controller = \"User\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Register(System.Collections.Generic.List`1[WebApplication_FirstAPI_Employee.Models.ViewModels.UserVModel2])" on controller "WebApplication_FirstAPI_Employee.Controllers.UserController" ("WebApplication_FirstAPI_Employee"). (122b2fdf)
+2023-09-15T12:39:17.3106274-07:00 0HMTM4BMCNIL8:0000001D [INF] Entity Framework Core "6.0.18" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer":"6.0.18"' with options: "None" (d2805559)
+2023-09-15T12:39:17.3151464-07:00 0HMTM4BMCNIL8:0000001D [INF] RequestBody: "[
+  {
+    \"userName\": \"hjghghjkl41474\",
+    \"password\": \"vjhgv\",
+    \"confirmPassword\": \"hgjyh\",
+    \"role\": \"8769586\"
+  }
+]" (6d42d084)
+2023-09-15T12:39:17.3248231-07:00 0HMTM4BMCNIL8:0000001D [INF] Executing "BadRequestObjectResult", writing value of type '"Microsoft.AspNetCore.Mvc.SerializableError"'. (605b4265)
+2023-09-15T12:39:17.3301723-07:00 0HMTM4BMCNIL8:0000001D [INF] Response:
+StatusCode: 400
+Content-Type: application/json; charset=utf-8 (999214c4)
+2023-09-15T12:39:17.3671898-07:00 0HMTM4BMCNIL8:0000001D [INF] Executed action "WebApplication_FirstAPI_Employee.Controllers.UserController.Register (WebApplication_FirstAPI_Employee)" in 108.727ms (afa2e885)
+2023-09-15T12:39:17.3711207-07:00 0HMTM4BMCNIL8:0000001D [INF] Executed endpoint '"WebApplication_FirstAPI_Employee.Controllers.UserController.Register (WebApplication_FirstAPI_Employee)"' (99874f2b)
+2023-09-15T12:39:17.3786319-07:00 0HMTM4BMCNIL8:0000001D [INF] ResponseBody: "{\"[0].Role\":[\"Role should be all LETTERS...!!\"],\"[0].Password\":[\"'Password' is not in the correct format.\"],\"[0].ConfirmPassword\":[\"'Confirm Password' must be equal to 'vjhgv'.\"]}" (c7a8e6fd)
+2023-09-15T12:39:17.3858713-07:00 0HMTM4BMCNIL8:0000001D [INF] Request finished HTTP/2 POST https://localhost:7084/api/user/register application/json 124 - 400 - application/json;+charset=utf-8 195.3645ms (791a596a)
+2023-09-15T12:43:59.4792239-07:00  [INF] User profile is available. Using '"C:\Users\Dell\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest. (7ac5e29c)
+2023-09-15T12:44:00.1000697-07:00  [INF] Now listening on: "https://localhost:7084" (d826f4b8)
+2023-09-15T12:44:00.1040051-07:00  [INF] Now listening on: "http://localhost:5133" (d826f4b8)
+2023-09-15T12:44:00.1273519-07:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-09-15T12:44:00.1322676-07:00  [INF] Hosting environment: "Development" (c3307c92)
+2023-09-15T12:44:00.1357617-07:00  [INF] Content root path: "C:\Users\Dell\Desktop\Final\Employee_API-61de5cb0c91d953a0f829852251c275fe6476605\WebApplication_FirstAPI_Employee\" (b5d60022)
+2023-09-15T12:44:05.5312423-07:00 0HMTM4GDT5GQB:0000000F [INF] Request starting HTTP/2 GET https://localhost:7084/swagger - - (ca22a1cb)
+2023-09-15T12:44:05.8733379-07:00 0HMTM4GDT5GQB:00000011 [INF] Request starting HTTP/2 GET https://localhost:7084/swagger/index.html - - (ca22a1cb)
+2023-09-15T12:44:06.2058104-07:00 0HMTM4GDT5GQB:0000000F [INF] Request finished HTTP/2 GET https://localhost:7084/swagger - - - 0 - - 593.1675ms (791a596a)
+2023-09-15T12:44:08.1613499-07:00 0HMTM4GDT5GQB:00000011 [INF] Request finished HTTP/2 GET https://localhost:7084/swagger/index.html - - - 200 - text/html;charset=utf-8 2288.7664ms (791a596a)
+2023-09-15T12:44:08.4186135-07:00 0HMTM4GDT5GQB:00000013 [INF] Request starting HTTP/2 GET https://localhost:7084/_framework/aspnetcore-browser-refresh.js - - (ca22a1cb)
+2023-09-15T12:44:08.4343423-07:00 0HMTM4GDT5GQB:00000015 [INF] Request starting HTTP/2 GET https://localhost:7084/_vs/browserLink - - (ca22a1cb)
+2023-09-15T12:44:08.4733219-07:00 0HMTM4GDT5GQB:00000013 [INF] Request finished HTTP/2 GET https://localhost:7084/_framework/aspnetcore-browser-refresh.js - - - 200 12034 application/javascript;+charset=utf-8 98.4033ms (791a596a)
+2023-09-15T12:44:08.7072513-07:00 0HMTM4GDT5GQB:00000015 [INF] Request finished HTTP/2 GET https://localhost:7084/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 282.3156ms (791a596a)
+2023-09-15T12:44:09.3412685-07:00 0HMTM4GDT5GQB:00000017 [INF] Request starting HTTP/2 GET https://localhost:7084/swagger/favicon-16x16.png - - (ca22a1cb)
+2023-09-15T12:44:09.6919738-07:00 0HMTM4GDT5GQB:00000017 [INF] Sending file. Request path: '"/favicon-16x16.png"'. Physical path: '"N/A"' (27b0a520)
+2023-09-15T12:44:09.7073067-07:00 0HMTM4GDT5GQB:00000017 [INF] Request finished HTTP/2 GET https://localhost:7084/swagger/favicon-16x16.png - - - 0 665 image/png 365.2734ms (791a596a)
+2023-09-15T12:44:09.8544818-07:00 0HMTM4GDT5GQB:00000019 [INF] Request starting HTTP/2 GET https://localhost:7084/swagger/v1/swagger.json - - (ca22a1cb)
+2023-09-15T12:44:11.9728279-07:00 0HMTM4GDT5GQB:00000019 [INF] Request finished HTTP/2 GET https://localhost:7084/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 2115.9633ms (791a596a)
+2023-09-15T12:49:06.7632572-07:00 0HMTM4GDT5GQC:0000000F [INF] Request starting HTTP/2 POST https://localhost:7084/api/user/register application/json 104 (ca22a1cb)
+2023-09-15T12:49:06.7818927-07:00 0HMTM4GDT5GQC:0000000F [INF] Request:
+Protocol: HTTP/2
+Method: POST
+Scheme: https
+PathBase: 
+Path: /api/user/register
+Accept: */*
+Host: localhost:7084
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/116.0
+:method: [Redacted]
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Content-Type: application/json
+Origin: [Redacted]
+Referer: [Redacted]
+TE: trailers
+Content-Length: 104
+sec-fetch-dest: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-site: [Redacted] (893de8da)
+2023-09-15T12:49:07.0134799-07:00 0HMTM4GDT5GQC:0000000F [INF] Executing endpoint '"WebApplication_FirstAPI_Employee.Controllers.UserController.Register (WebApplication_FirstAPI_Employee)"' (500cc934)
+2023-09-15T12:49:07.0994649-07:00 0HMTM4GDT5GQC:0000000F [INF] Route matched with "{action = \"Register\", controller = \"User\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Register(System.Collections.Generic.List`1[WebApplication_FirstAPI_Employee.Models.ViewModels.UserVModel2])" on controller "WebApplication_FirstAPI_Employee.Controllers.UserController" ("WebApplication_FirstAPI_Employee"). (122b2fdf)
+2023-09-15T12:49:10.3272487-07:00 0HMTM4GDT5GQC:0000000F [INF] Entity Framework Core "6.0.18" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer":"6.0.18"' with options: "None" (d2805559)
+2023-09-15T12:49:10.3857575-07:00 0HMTM4GDT5GQC:0000000F [INF] RequestBody: "[
+  {
+    \"userName\": \"\",
+    \"password\": \"ghgj\",
+    \"confirmPassword\": \"bjh\",
+    \"role\": \"5446\"
+  }
+]" (6d42d084)
+2023-09-15T12:49:10.6142022-07:00 0HMTM4GDT5GQC:0000000F [INF] Executing "BadRequestObjectResult", writing value of type '"Microsoft.AspNetCore.Mvc.SerializableError"'. (605b4265)
+2023-09-15T12:49:10.6277851-07:00 0HMTM4GDT5GQC:0000000F [INF] Response:
+StatusCode: 400
+Content-Type: application/json; charset=utf-8 (999214c4)
+2023-09-15T12:49:10.6591373-07:00 0HMTM4GDT5GQC:0000000F [INF] Executed action "WebApplication_FirstAPI_Employee.Controllers.UserController.Register (WebApplication_FirstAPI_Employee)" in 3528.9784ms (afa2e885)
+2023-09-15T12:49:10.6631566-07:00 0HMTM4GDT5GQC:0000000F [INF] Executed endpoint '"WebApplication_FirstAPI_Employee.Controllers.UserController.Register (WebApplication_FirstAPI_Employee)"' (99874f2b)
+2023-09-15T12:49:10.6673068-07:00 0HMTM4GDT5GQC:0000000F [INF] ResponseBody: "{\"[0].Role\":[\"Role should be all LETTERS...!!\"],\"[0].Password\":[\"Password must be between 6 and 20 characters and contain one uppercase letter, one lowercase letter, one digit and one special character...!!\"],\"[0].UserName\":[\"User Name must be Correct & Valid....!\"],\"[0].ConfirmPassword\":[\"Confirm Password should be equal to Password...!!\"]}" (c7a8e6fd)
+2023-09-15T12:49:10.7025192-07:00 0HMTM4GDT5GQC:0000000F [INF] Request finished HTTP/2 POST https://localhost:7084/api/user/register application/json 104 - 400 - application/json;+charset=utf-8 3939.9441ms (791a596a)
+2023-09-15T12:54:32.5491343-07:00  [INF] User profile is available. Using '"C:\Users\Dell\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest. (7ac5e29c)
+2023-09-15T12:54:33.2675040-07:00  [INF] Now listening on: "https://localhost:7084" (d826f4b8)
+2023-09-15T12:54:33.2708750-07:00  [INF] Now listening on: "http://localhost:5133" (d826f4b8)
+2023-09-15T12:54:33.2896669-07:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-09-15T12:54:33.2931911-07:00  [INF] Hosting environment: "Development" (c3307c92)
+2023-09-15T12:54:33.2963236-07:00  [INF] Content root path: "C:\Users\Dell\Desktop\Final\Employee_API-61de5cb0c91d953a0f829852251c275fe6476605\WebApplication_FirstAPI_Employee\" (b5d60022)
+2023-09-15T12:54:39.1512615-07:00 0HMTM4MAJUV6B:0000000F [INF] Request starting HTTP/2 GET https://localhost:7084/swagger - - (ca22a1cb)
+2023-09-15T12:54:39.4569600-07:00 0HMTM4MAJUV6B:00000011 [INF] Request starting HTTP/2 GET https://localhost:7084/swagger/index.html - - (ca22a1cb)
+2023-09-15T12:54:40.8896538-07:00 0HMTM4MAJUV6B:0000000F [INF] Request finished HTTP/2 GET https://localhost:7084/swagger - - - 0 - - 1564.1557ms (791a596a)
+2023-09-15T12:54:42.3459140-07:00 0HMTM4MAJUV6B:00000011 [INF] Request finished HTTP/2 GET https://localhost:7084/swagger/index.html - - - 200 - text/html;charset=utf-8 2890.8612ms (791a596a)
+2023-09-15T12:54:42.5478429-07:00 0HMTM4MAJUV6B:00000013 [INF] Request starting HTTP/2 GET https://localhost:7084/_framework/aspnetcore-browser-refresh.js - - (ca22a1cb)
+2023-09-15T12:54:42.5626962-07:00 0HMTM4MAJUV6B:00000015 [INF] Request starting HTTP/2 GET https://localhost:7084/_vs/browserLink - - (ca22a1cb)
+2023-09-15T12:54:42.5898238-07:00 0HMTM4MAJUV6B:00000013 [INF] Request finished HTTP/2 GET https://localhost:7084/_framework/aspnetcore-browser-refresh.js - - - 200 12034 application/javascript;+charset=utf-8 50.8745ms (791a596a)
+2023-09-15T12:54:42.7222325-07:00 0HMTM4MAJUV6B:00000015 [INF] Request finished HTTP/2 GET https://localhost:7084/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 183.6256ms (791a596a)
+2023-09-15T12:54:42.9376312-07:00 0HMTM4MAJUV6B:00000017 [INF] Request starting HTTP/2 GET https://localhost:7084/swagger/favicon-16x16.png - - (ca22a1cb)
+2023-09-15T12:54:43.0725845-07:00 0HMTM4MAJUV6B:00000017 [INF] Sending file. Request path: '"/favicon-16x16.png"'. Physical path: '"N/A"' (27b0a520)
+2023-09-15T12:54:43.0781723-07:00 0HMTM4MAJUV6B:00000017 [INF] Request finished HTTP/2 GET https://localhost:7084/swagger/favicon-16x16.png - - - 0 665 image/png 149.2999ms (791a596a)
+2023-09-15T12:54:43.8569181-07:00 0HMTM4MAJUV6B:00000019 [INF] Request starting HTTP/2 GET https://localhost:7084/swagger/v1/swagger.json - - (ca22a1cb)
+2023-09-15T12:54:45.6100615-07:00 0HMTM4MAJUV6B:00000019 [INF] Request finished HTTP/2 GET https://localhost:7084/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 2098.4420ms (791a596a)
+2023-09-15T13:01:41.0204818-07:00 0HMTM4MAJUV6C:0000000F [INF] Request starting HTTP/2 POST https://localhost:7084/api/user/register application/json 126 (ca22a1cb)
+2023-09-15T13:01:41.0408799-07:00 0HMTM4MAJUV6C:0000000F [INF] Request:
+Protocol: HTTP/2
+Method: POST
+Scheme: https
+PathBase: 
+Path: /api/user/register
+Accept: */*
+Host: localhost:7084
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/116.0
+:method: [Redacted]
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Content-Type: application/json
+Origin: [Redacted]
+Referer: [Redacted]
+TE: trailers
+Content-Length: 126
+sec-fetch-dest: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-site: [Redacted] (893de8da)
+2023-09-15T13:01:41.2979253-07:00 0HMTM4MAJUV6C:0000000F [INF] Executing endpoint '"WebApplication_FirstAPI_Employee.Controllers.UserController.Register (WebApplication_FirstAPI_Employee)"' (500cc934)
+2023-09-15T13:01:41.3910559-07:00 0HMTM4MAJUV6C:0000000F [INF] Route matched with "{action = \"Register\", controller = \"User\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Register(System.Collections.Generic.List`1[WebApplication_FirstAPI_Employee.Models.ViewModels.UserVModel2])" on controller "WebApplication_FirstAPI_Employee.Controllers.UserController" ("WebApplication_FirstAPI_Employee"). (122b2fdf)
+2023-09-15T13:01:44.7573343-07:00 0HMTM4MAJUV6C:0000000F [INF] Entity Framework Core "6.0.18" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer":"6.0.18"' with options: "None" (d2805559)
+2023-09-15T13:01:44.8070522-07:00 0HMTM4MAJUV6C:0000000F [INF] RequestBody: "[
+  {
+    \"userName\": \"gfhgj\",
+    \"password\": \"raG@hd552sd\",
+    \"confirmPassword\": \"raG@hd552sd\",
+    \"role\": \"string\"
+  }
+]" (6d42d084)
+2023-09-15T13:01:49.4486177-07:00 0HMTM4MAJUV6C:0000000F [INF] Executed DbCommand ("245"ms) [Parameters=["@__user_UserName_0='?' (Size = 4000), @__user_Role_1='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[ConfirmPassword], [u].[Password], [u].[Role], [u].[Username]
+FROM [Users] AS [u]
+WHERE ([u].[Username] = @__user_UserName_0) AND ([u].[Role] = @__user_Role_1)" (0723d8ff)
+2023-09-15T13:01:49.8469439-07:00 0HMTM4MAJUV6C:0000000F [WRN] Savepoints are disabled because Multiple Active Result Sets (MARS) is enabled. If 'SaveChanges' fails, then the transaction cannot be automatically rolled back to a known clean state. Instead, the transaction should be rolled back by the application before retrying 'SaveChanges'. See https://go.microsoft.com/fwlink/?linkid=2149338 for more information. To identify the code which triggers this warning, call 'ConfigureWarnings(w => w.Throw(SqlServerEventId.SavepointsDisabledBecauseOfMARS))'. (9afd893e)
+2023-09-15T13:01:50.0869288-07:00 0HMTM4MAJUV6C:0000000F [INF] Executed DbCommand ("62"ms) [Parameters=["@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [Users] ([ConfirmPassword], [Password], [Role], [Username])
+VALUES (@p0, @p1, @p2, @p3);
+SELECT [Id]
+FROM [Users]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();" (0723d8ff)
+2023-09-15T13:01:50.1897007-07:00 0HMTM4MAJUV6C:0000000F [INF] User Registered...!! (eeb54552)
+2023-09-15T13:01:50.2352632-07:00 0HMTM4MAJUV6C:0000000F [INF] Executing StatusCodeResult, setting HTTP status code 200 (3fe03d2f)
+2023-09-15T13:01:50.2822537-07:00 0HMTM4MAJUV6C:0000000F [INF] Executed action "WebApplication_FirstAPI_Employee.Controllers.UserController.Register (WebApplication_FirstAPI_Employee)" in 8843.9345ms (afa2e885)
+2023-09-15T13:01:50.2865546-07:00 0HMTM4MAJUV6C:0000000F [INF] Executed endpoint '"WebApplication_FirstAPI_Employee.Controllers.UserController.Register (WebApplication_FirstAPI_Employee)"' (99874f2b)
+2023-09-15T13:01:50.2917646-07:00 0HMTM4MAJUV6C:0000000F [INF] Response:
+StatusCode: 200 (999214c4)
+2023-09-15T13:01:50.3978114-07:00 0HMTM4MAJUV6C:0000000F [INF] Request finished HTTP/2 POST https://localhost:7084/api/user/register application/json 126 - 200 0 - 9376.2525ms (791a596a)
+2023-09-15T15:33:52.4433628-07:00  [INF] User profile is available. Using '"C:\Users\Dell\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest. (7ac5e29c)
+2023-09-15T15:33:53.2872725-07:00  [INF] Now listening on: "https://localhost:7084" (d826f4b8)
+2023-09-15T15:33:53.2910309-07:00  [INF] Now listening on: "http://localhost:5133" (d826f4b8)
+2023-09-15T15:33:53.3164056-07:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-09-15T15:33:53.3206496-07:00  [INF] Hosting environment: "Development" (c3307c92)
+2023-09-15T15:33:53.3242213-07:00  [INF] Content root path: "C:\Users\Dell\Desktop\Final\Employee_API-61de5cb0c91d953a0f829852251c275fe6476605\WebApplication_FirstAPI_Employee\" (b5d60022)
+2023-09-15T15:34:01.5424937-07:00 0HMTM7FBK50D3:0000000F [INF] Request starting HTTP/2 GET https://localhost:7084/swagger - - (ca22a1cb)
+2023-09-15T15:34:01.8343588-07:00 0HMTM7FBK50D3:00000011 [INF] Request starting HTTP/2 GET https://localhost:7084/swagger/index.html - - (ca22a1cb)
+2023-09-15T15:34:03.5814706-07:00 0HMTM7FBK50D3:0000000F [INF] Request finished HTTP/2 GET https://localhost:7084/swagger - - - 0 - - 2085.5853ms (791a596a)
+2023-09-15T15:34:06.2640949-07:00 0HMTM7FBK50D3:00000011 [INF] Request finished HTTP/2 GET https://localhost:7084/swagger/index.html - - - 200 - text/html;charset=utf-8 4480.5710ms (791a596a)
+2023-09-15T15:34:07.0350427-07:00 0HMTM7FBK50D3:00000013 [INF] Request starting HTTP/2 GET https://localhost:7084/_framework/aspnetcore-browser-refresh.js - - (ca22a1cb)
+2023-09-15T15:34:07.0665621-07:00 0HMTM7FBK50D3:00000013 [INF] Request finished HTTP/2 GET https://localhost:7084/_framework/aspnetcore-browser-refresh.js - - - 200 12034 application/javascript;+charset=utf-8 32.7716ms (791a596a)
+2023-09-15T15:34:07.1092780-07:00 0HMTM7FBK50D3:00000015 [INF] Request starting HTTP/2 GET https://localhost:7084/_vs/browserLink - - (ca22a1cb)
+2023-09-15T15:34:08.4881542-07:00 0HMTM7FBK50D3:00000015 [INF] Request finished HTTP/2 GET https://localhost:7084/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 1386.6897ms (791a596a)
+2023-09-15T15:34:09.6700544-07:00 0HMTM7FBK50D3:00000017 [INF] Request starting HTTP/2 GET https://localhost:7084/swagger/v1/swagger.json - - (ca22a1cb)
+2023-09-15T15:34:10.9089739-07:00 0HMTM7FBK50D3:00000017 [INF] Request finished HTTP/2 GET https://localhost:7084/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 1237.1337ms (791a596a)
+2023-09-15T15:35:51.9912870-07:00 0HMTM7FBK50D3:00000019 [INF] Request starting HTTP/2 POST https://localhost:7084/api/user/Authenticate application/json 57 (ca22a1cb)
+2023-09-15T15:35:52.0385872-07:00 0HMTM7FBK50D3:00000019 [INF] Request:
+Protocol: HTTP/2
+Method: POST
+Scheme: https
+PathBase: 
+Path: /api/user/Authenticate
+Accept: */*
+Host: localhost:7084
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/116.0
+:method: [Redacted]
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Content-Type: application/json
+Origin: [Redacted]
+Referer: [Redacted]
+TE: trailers
+Content-Length: 57
+sec-fetch-dest: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-site: [Redacted] (893de8da)
+2023-09-15T15:35:52.5403533-07:00 0HMTM7FBK50D3:00000019 [INF] Executing endpoint '"WebApplication_FirstAPI_Employee.Controllers.UserController.Authenticate (WebApplication_FirstAPI_Employee)"' (500cc934)
+2023-09-15T15:35:52.6393230-07:00 0HMTM7FBK50D3:00000019 [INF] Route matched with "{action = \"Authenticate\", controller = \"User\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Authenticate(WebApplication_FirstAPI_Employee.Models.ViewModels.UserVM)" on controller "WebApplication_FirstAPI_Employee.Controllers.UserController" ("WebApplication_FirstAPI_Employee"). (122b2fdf)
+2023-09-15T15:35:56.5804344-07:00 0HMTM7FBK50D3:00000019 [INF] Entity Framework Core "6.0.18" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer":"6.0.18"' with options: "None" (d2805559)
+2023-09-15T15:35:56.6475091-07:00 0HMTM7FBK50D3:00000019 [INF] RequestBody: "{
+  \"username\": \"ramneet\",
+  \"password\": \"Ramneet@123#\"
+}" (6d42d084)
+2023-09-15T15:36:00.3518040-07:00 0HMTM7FBK50D3:00000019 [INF] Executed DbCommand ("496"ms) [Parameters=["@__username_0='?' (Size = 4000), @__password_1='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[ConfirmPassword], [u].[Password], [u].[Role], [u].[Username]
+FROM [Users] AS [u]
+WHERE ([u].[Username] = @__username_0) AND ([u].[Password] = @__password_1)" (0723d8ff)
+2023-09-15T15:36:01.1045704-07:00 0HMTM7FBK50D3:00000019 [INF] User Login'ed...!! (5a73eec5)
+2023-09-15T15:36:01.1355150-07:00 0HMTM7FBK50D3:00000019 [INF] Executing "OkObjectResult", writing value of type '"WebApplication_FirstAPI_Employee.Models.User"'. (605b4265)
+2023-09-15T15:36:01.1507544-07:00 0HMTM7FBK50D3:00000019 [INF] Response:
+StatusCode: 200
+Content-Type: application/json; charset=utf-8 (999214c4)
+2023-09-15T15:36:01.1935412-07:00 0HMTM7FBK50D3:00000019 [INF] Executed action "WebApplication_FirstAPI_Employee.Controllers.UserController.Authenticate (WebApplication_FirstAPI_Employee)" in 8519.9553ms (afa2e885)
+2023-09-15T15:36:01.1975911-07:00 0HMTM7FBK50D3:00000019 [INF] Executed endpoint '"WebApplication_FirstAPI_Employee.Controllers.UserController.Authenticate (WebApplication_FirstAPI_Employee)"' (99874f2b)
+2023-09-15T15:36:01.2028780-07:00 0HMTM7FBK50D3:00000019 [INF] ResponseBody: "{\"id\":1,\"username\":\"ramneet\",\"password\":\"\",\"confirmPassword\":\"Ramneet@123#\",\"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiMSIsInJvbGUiOiJBZG1pbiIsIm5iZiI6MTY5NDgxNzM2MCwiZXhwIjoxNjk1NDIyMTYwLCJpYXQiOjE2OTQ4MTczNjB9.WM5O9390a6Ouu-a2mIU18ov3nhMSlXJttlDkmKGBrkU\",\"role\":\"Admin\"}" (c7a8e6fd)
+2023-09-15T15:36:01.2387152-07:00 0HMTM7FBK50D3:00000019 [INF] Request finished HTTP/2 POST https://localhost:7084/api/user/Authenticate application/json 57 - 200 - application/json;+charset=utf-8 9255.0732ms (791a596a)
+2023-09-15T15:36:42.7114571-07:00 0HMTM7FBK50D3:0000001B [INF] Request starting HTTP/2 POST https://localhost:7084/api/employee1?deptId=1 application/json 81 (ca22a1cb)
+2023-09-15T15:36:42.7284673-07:00 0HMTM7FBK50D3:0000001B [INF] Request:
+Protocol: HTTP/2
+Method: POST
+Scheme: https
+PathBase: 
+Path: /api/employee1
+Accept: */*
+Host: localhost:7084
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/116.0
+:method: [Redacted]
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Authorization: [Redacted]
+Content-Type: application/json
+Origin: [Redacted]
+Referer: [Redacted]
+TE: trailers
+Content-Length: 81
+sec-fetch-dest: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-site: [Redacted] (893de8da)
+2023-09-15T15:36:42.9670690-07:00 0HMTM7FBK50D3:0000001B [INF] Executing endpoint '"WebApplication_FirstAPI_Employee.Controllers.Employee1Controller.CreateEmployee (WebApplication_FirstAPI_Employee)"' (500cc934)
+2023-09-15T15:36:42.9812077-07:00 0HMTM7FBK50D3:0000001B [INF] Route matched with "{action = \"CreateEmployee\", controller = \"Employee1\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult CreateEmployee(Int32, WebApplication_FirstAPI_Employee.Models.DTOs.Employee1DTO)" on controller "WebApplication_FirstAPI_Employee.Controllers.Employee1Controller" ("WebApplication_FirstAPI_Employee"). (122b2fdf)
+2023-09-15T15:36:43.1382763-07:00 0HMTM7FBK50D3:0000001B [INF] Entity Framework Core "6.0.18" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer":"6.0.18"' with options: "None" (d2805559)
+2023-09-15T15:36:43.6694218-07:00 0HMTM7FBK50D3:0000001B [INF] RequestBody: "{
+  \"name\": \"hj\",
+  \"address\": \"hhj\",
+  \"salary\": 0,
+  \"eMail\": \"user@bhhj.com\"
+}" (6d42d084)
+2023-09-15T15:36:43.7712625-07:00 0HMTM7FBK50D3:0000001B [INF] Executing "BadRequestObjectResult", writing value of type '"Microsoft.AspNetCore.Mvc.SerializableError"'. (605b4265)
+2023-09-15T15:36:43.7818880-07:00 0HMTM7FBK50D3:0000001B [INF] Response:
+StatusCode: 400
+Content-Type: application/json; charset=utf-8 (999214c4)
+2023-09-15T15:36:43.7860903-07:00 0HMTM7FBK50D3:0000001B [INF] Executed action "WebApplication_FirstAPI_Employee.Controllers.Employee1Controller.CreateEmployee (WebApplication_FirstAPI_Employee)" in 801.0667ms (afa2e885)
+2023-09-15T15:36:43.7923753-07:00 0HMTM7FBK50D3:0000001B [INF] Executed endpoint '"WebApplication_FirstAPI_Employee.Controllers.Employee1Controller.CreateEmployee (WebApplication_FirstAPI_Employee)"' (99874f2b)
+2023-09-15T15:36:43.8300267-07:00 0HMTM7FBK50D3:0000001B [INF] ResponseBody: "{\"Salary\":[\"Salary should not be EMPTY....!\"]}" (c7a8e6fd)
+2023-09-15T15:36:43.8353581-07:00 0HMTM7FBK50D3:0000001B [INF] Request finished HTTP/2 POST https://localhost:7084/api/employee1?deptId=1 application/json 81 - 400 - application/json;+charset=utf-8 1129.0896ms (791a596a)
+2023-09-15T15:36:53.8814308-07:00 0HMTM7FBK50D3:0000001D [INF] Request starting HTTP/2 POST https://localhost:7084/api/employee1?deptId=1 application/json 86 (ca22a1cb)
+2023-09-15T15:36:53.8998936-07:00 0HMTM7FBK50D3:0000001D [INF] Request:
+Protocol: HTTP/2
+Method: POST
+Scheme: https
+PathBase: 
+Path: /api/employee1
+Accept: */*
+Host: localhost:7084
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/116.0
+:method: [Redacted]
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Authorization: [Redacted]
+Content-Type: application/json
+Origin: [Redacted]
+Referer: [Redacted]
+TE: trailers
+Content-Length: 86
+sec-fetch-dest: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-site: [Redacted] (893de8da)
+2023-09-15T15:36:53.9186624-07:00 0HMTM7FBK50D3:0000001D [INF] Executing endpoint '"WebApplication_FirstAPI_Employee.Controllers.Employee1Controller.CreateEmployee (WebApplication_FirstAPI_Employee)"' (500cc934)
+2023-09-15T15:36:53.9505304-07:00 0HMTM7FBK50D3:0000001D [INF] Route matched with "{action = \"CreateEmployee\", controller = \"Employee1\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult CreateEmployee(Int32, WebApplication_FirstAPI_Employee.Models.DTOs.Employee1DTO)" on controller "WebApplication_FirstAPI_Employee.Controllers.Employee1Controller" ("WebApplication_FirstAPI_Employee"). (122b2fdf)
+2023-09-15T15:36:53.9991423-07:00 0HMTM7FBK50D3:0000001D [INF] Entity Framework Core "6.0.18" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer":"6.0.18"' with options: "None" (d2805559)
+2023-09-15T15:36:54.0171468-07:00 0HMTM7FBK50D3:0000001D [INF] RequestBody: "{
+  \"name\": \"hj\",
+  \"address\": \"hhj\",
+  \"salary\": 154565,
+  \"eMail\": \"user@bhhj.com\"
+}" (6d42d084)
+2023-09-15T15:36:54.1296984-07:00 0HMTM7FBK50D3:0000001D [INF] Executed DbCommand ("58"ms) [Parameters=["@__deptId_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [d].[Id], [d].[Name]
+FROM [Department1] AS [d]
+WHERE [d].[Id] = @__deptId_0" (0723d8ff)
+2023-09-15T15:36:55.3873619-07:00 0HMTM7FBK50D3:0000001D [INF] Executed DbCommand ("183"ms) [Parameters=["@p0='?' (Size = 4000), @p1='?' (DbType = Int32), @p2='?' (Size = 4000), @p3='?' (Size = 4000), @p4='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [Employee1] ([Address], [Department1Id], [EMail], [Name], [Salary])
+VALUES (@p0, @p1, @p2, @p3, @p4);
+SELECT [Id]
+FROM [Employee1]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();" (0723d8ff)
+2023-09-15T15:36:55.5900592-07:00 0HMTM7FBK50D3:0000001D [INF] Executed DbCommand ("38"ms) [Parameters=["@p5='?' (DbType = Int32), @p6='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [DeptsEmps] ([DepartmentId], [EmployeeId])
+VALUES (@p5, @p6);" (0723d8ff)
+2023-09-15T15:36:55.6575892-07:00 0HMTM7FBK50D3:0000001D [INF] Executing "OkObjectResult", writing value of type '"System.String"'. (605b4265)
+2023-09-15T15:36:55.6626461-07:00 0HMTM7FBK50D3:0000001D [INF] Response:
+StatusCode: 200
+Content-Type: text/plain; charset=utf-8 (999214c4)
+2023-09-15T15:36:55.6685328-07:00 0HMTM7FBK50D3:0000001D [INF] Executed action "WebApplication_FirstAPI_Employee.Controllers.Employee1Controller.CreateEmployee (WebApplication_FirstAPI_Employee)" in 1712.6639ms (afa2e885)
+2023-09-15T15:36:55.6731598-07:00 0HMTM7FBK50D3:0000001D [INF] Executed endpoint '"WebApplication_FirstAPI_Employee.Controllers.Employee1Controller.CreateEmployee (WebApplication_FirstAPI_Employee)"' (99874f2b)
+2023-09-15T15:36:55.6777908-07:00 0HMTM7FBK50D3:0000001D [INF] ResponseBody: "Data Saved SuccessFully...!!" (c7a8e6fd)
+2023-09-15T15:36:55.6836418-07:00 0HMTM7FBK50D3:0000001D [INF] Request finished HTTP/2 POST https://localhost:7084/api/employee1?deptId=1 application/json 86 - 200 - text/plain;+charset=utf-8 1814.5673ms (791a596a)
+2023-09-15T15:37:11.1143720-07:00 0HMTM7FBK50D3:0000001F [INF] Request starting HTTP/2 POST https://localhost:7084/api/employee1?deptId=1 application/json 81 (ca22a1cb)
+2023-09-15T15:37:11.1186709-07:00 0HMTM7FBK50D3:0000001F [INF] Request:
+Protocol: HTTP/2
+Method: POST
+Scheme: https
+PathBase: 
+Path: /api/employee1
+Accept: */*
+Host: localhost:7084
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/116.0
+:method: [Redacted]
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Authorization: [Redacted]
+Content-Type: application/json
+Origin: [Redacted]
+Referer: [Redacted]
+TE: trailers
+Content-Length: 81
+sec-fetch-dest: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-site: [Redacted] (893de8da)
+2023-09-15T15:37:11.1303766-07:00 0HMTM7FBK50D3:0000001F [INF] Executing endpoint '"WebApplication_FirstAPI_Employee.Controllers.Employee1Controller.CreateEmployee (WebApplication_FirstAPI_Employee)"' (500cc934)
+2023-09-15T15:37:11.1348659-07:00 0HMTM7FBK50D3:0000001F [INF] Route matched with "{action = \"CreateEmployee\", controller = \"Employee1\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult CreateEmployee(Int32, WebApplication_FirstAPI_Employee.Models.DTOs.Employee1DTO)" on controller "WebApplication_FirstAPI_Employee.Controllers.Employee1Controller" ("WebApplication_FirstAPI_Employee"). (122b2fdf)
+2023-09-15T15:37:11.1413998-07:00 0HMTM7FBK50D3:0000001F [INF] Entity Framework Core "6.0.18" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer":"6.0.18"' with options: "None" (d2805559)
+2023-09-15T15:37:11.1472666-07:00 0HMTM7FBK50D3:0000001F [INF] RequestBody: "{
+  \"name\": \"hj\",
+  \"address\": \"hhj\",
+  \"salary\": 154565,
+  \"eMail\": \"user@nkk\"
+}" (6d42d084)
+2023-09-15T15:37:11.1652368-07:00 0HMTM7FBK50D3:0000001F [INF] Executed DbCommand ("5"ms) [Parameters=["@__deptId_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [d].[Id], [d].[Name]
+FROM [Department1] AS [d]
+WHERE [d].[Id] = @__deptId_0" (0723d8ff)
+2023-09-15T15:37:11.1766209-07:00 0HMTM7FBK50D3:0000001F [INF] Executed DbCommand ("4"ms) [Parameters=["@p0='?' (Size = 4000), @p1='?' (DbType = Int32), @p2='?' (Size = 4000), @p3='?' (Size = 4000), @p4='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [Employee1] ([Address], [Department1Id], [EMail], [Name], [Salary])
+VALUES (@p0, @p1, @p2, @p3, @p4);
+SELECT [Id]
+FROM [Employee1]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();" (0723d8ff)
+2023-09-15T15:37:11.1850789-07:00 0HMTM7FBK50D3:0000001F [INF] Executed DbCommand ("2"ms) [Parameters=["@p5='?' (DbType = Int32), @p6='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [DeptsEmps] ([DepartmentId], [EmployeeId])
+VALUES (@p5, @p6);" (0723d8ff)
+2023-09-15T15:37:11.1925228-07:00 0HMTM7FBK50D3:0000001F [INF] Executing "OkObjectResult", writing value of type '"System.String"'. (605b4265)
+2023-09-15T15:37:11.1991060-07:00 0HMTM7FBK50D3:0000001F [INF] Response:
+StatusCode: 200
+Content-Type: text/plain; charset=utf-8 (999214c4)
+2023-09-15T15:37:11.2061995-07:00 0HMTM7FBK50D3:0000001F [INF] Executed action "WebApplication_FirstAPI_Employee.Controllers.Employee1Controller.CreateEmployee (WebApplication_FirstAPI_Employee)" in 64.4854ms (afa2e885)
+2023-09-15T15:37:11.2165096-07:00 0HMTM7FBK50D3:0000001F [INF] Executed endpoint '"WebApplication_FirstAPI_Employee.Controllers.Employee1Controller.CreateEmployee (WebApplication_FirstAPI_Employee)"' (99874f2b)
+2023-09-15T15:37:11.2212084-07:00 0HMTM7FBK50D3:0000001F [INF] ResponseBody: "Data Saved SuccessFully...!!" (c7a8e6fd)
+2023-09-15T15:37:11.2309560-07:00 0HMTM7FBK50D3:0000001F [INF] Request finished HTTP/2 POST https://localhost:7084/api/employee1?deptId=1 application/json 81 - 200 - text/plain;+charset=utf-8 110.7734ms (791a596a)
+2023-09-15T15:37:42.8450496-07:00 0HMTM7FBK50D3:00000021 [INF] Request starting HTTP/2 POST https://localhost:7084/api/employee1?deptId=1 application/json 80 (ca22a1cb)
+2023-09-15T15:37:42.8529035-07:00 0HMTM7FBK50D3:00000021 [INF] Request:
+Protocol: HTTP/2
+Method: POST
+Scheme: https
+PathBase: 
+Path: /api/employee1
+Accept: */*
+Host: localhost:7084
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/116.0
+:method: [Redacted]
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Authorization: [Redacted]
+Content-Type: application/json
+Origin: [Redacted]
+Referer: [Redacted]
+TE: trailers
+Content-Length: 80
+sec-fetch-dest: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-site: [Redacted] (893de8da)
+2023-09-15T15:37:42.8618319-07:00 0HMTM7FBK50D3:00000021 [INF] Executing endpoint '"WebApplication_FirstAPI_Employee.Controllers.Employee1Controller.CreateEmployee (WebApplication_FirstAPI_Employee)"' (500cc934)
+2023-09-15T15:37:42.8667463-07:00 0HMTM7FBK50D3:00000021 [INF] Route matched with "{action = \"CreateEmployee\", controller = \"Employee1\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult CreateEmployee(Int32, WebApplication_FirstAPI_Employee.Models.DTOs.Employee1DTO)" on controller "WebApplication_FirstAPI_Employee.Controllers.Employee1Controller" ("WebApplication_FirstAPI_Employee"). (122b2fdf)
+2023-09-15T15:37:42.8713780-07:00 0HMTM7FBK50D3:00000021 [INF] Entity Framework Core "6.0.18" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer":"6.0.18"' with options: "None" (d2805559)
+2023-09-15T15:37:42.8785954-07:00 0HMTM7FBK50D3:00000021 [INF] RequestBody: "{
+  \"name\": \"hj\",
+  \"address\": \"hhj\",
+  \"salary\": 154565,
+  \"eMail\": \"usernkk\"
+}" (6d42d084)
+2023-09-15T15:37:42.9267002-07:00 0HMTM7FBK50D3:00000021 [INF] Executing "BadRequestObjectResult", writing value of type '"Microsoft.AspNetCore.Mvc.SerializableError"'. (605b4265)
+2023-09-15T15:37:42.9312063-07:00 0HMTM7FBK50D3:00000021 [INF] Response:
+StatusCode: 400
+Content-Type: application/json; charset=utf-8 (999214c4)
+2023-09-15T15:37:42.9360948-07:00 0HMTM7FBK50D3:00000021 [INF] Executed action "WebApplication_FirstAPI_Employee.Controllers.Employee1Controller.CreateEmployee (WebApplication_FirstAPI_Employee)" in 64.6722ms (afa2e885)
+2023-09-15T15:37:42.9425310-07:00 0HMTM7FBK50D3:00000021 [INF] Executed endpoint '"WebApplication_FirstAPI_Employee.Controllers.Employee1Controller.CreateEmployee (WebApplication_FirstAPI_Employee)"' (99874f2b)
+2023-09-15T15:37:42.9471487-07:00 0HMTM7FBK50D3:00000021 [INF] ResponseBody: "{\"EMail\":[\"The EMail field is not a valid e-mail address.\",\"'E Mail' is not a valid email address.\"]}" (c7a8e6fd)
+2023-09-15T15:37:42.9532280-07:00 0HMTM7FBK50D3:00000021 [INF] Request finished HTTP/2 POST https://localhost:7084/api/employee1?deptId=1 application/json 80 - 400 - application/json;+charset=utf-8 109.4248ms (791a596a)

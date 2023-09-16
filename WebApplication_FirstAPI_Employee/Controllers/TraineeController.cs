@@ -10,7 +10,7 @@ namespace WebApplication_FirstAPI_Employee.Controllers
 {
     [Route("api/trainee")]
     [ApiController]
-    //[Authorize]
+    [Authorize]
     public class TraineeController : ControllerBase
     {
         private readonly IUnitOfWork _unitofwork;

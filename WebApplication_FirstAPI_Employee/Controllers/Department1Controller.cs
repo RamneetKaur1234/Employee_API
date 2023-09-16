@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using WebApplication_FirstAPI_Employee.Models;
 using WebApplication_FirstAPI_Employee.Models.DTOs;
@@ -8,6 +9,7 @@ namespace WebApplication_FirstAPI_Employee.Controllers
 {
     [Route("api/department1")]
     [ApiController]
+    [Authorize]
     public class Department1Controller : ControllerBase
     {
         private readonly IUnitOfWork _unitOfWork;

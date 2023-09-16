@@ -275,3 +275,6 @@ C:\Users\Dell\Desktop\Final\Employee_API-61de5cb0c91d953a0f829852251c275fe647660
 C:\Users\Dell\Desktop\Final\Employee_API-61de5cb0c91d953a0f829852251c275fe6476605\WebApplication_FirstAPI_Employee\obj\Debug\net6.0\WebApplication_FirstAPI_Employee.pdb
 C:\Users\Dell\Desktop\Final\Employee_API-61de5cb0c91d953a0f829852251c275fe6476605\WebApplication_FirstAPI_Employee\obj\Debug\net6.0\WebApplication_FirstAPI_Employee.genruntimeconfig.cache
 C:\Users\Dell\Desktop\Final\Employee_API-61de5cb0c91d953a0f829852251c275fe6476605\WebApplication_FirstAPI_Employee\obj\Debug\net6.0\ref\WebApplication_FirstAPI_Employee.dll
+C:\Users\Dell\Desktop\Final\Employee_API-61de5cb0c91d953a0f829852251c275fe6476605\WebApplication_FirstAPI_Employee\bin\Debug\net6.0\FluentValidation.dll
+C:\Users\Dell\Desktop\Final\Employee_API-61de5cb0c91d953a0f829852251c275fe6476605\WebApplication_FirstAPI_Employee\bin\Debug\net6.0\FluentValidation.AspNetCore.dll
+C:\Users\Dell\Desktop\Final\Employee_API-61de5cb0c91d953a0f829852251c275fe6476605\WebApplication_FirstAPI_Employee\bin\Debug\net6.0\FluentValidation.DependencyInjectionExtensions.dll

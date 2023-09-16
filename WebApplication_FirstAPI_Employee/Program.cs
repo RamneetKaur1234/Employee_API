@@ -1,3 +1,4 @@
+using FluentValidation.AspNetCore;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.HttpLogging;
 using Microsoft.AspNetCore.Mvc;
@@ -5,6 +6,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
 using Swashbuckle.AspNetCore.SwaggerGen;
+using System.Reflection;
 using System.Text;
 using WebApplication_FirstAPI_Employee;
 using WebApplication_FirstAPI_Employee.Data;
@@ -22,7 +24,18 @@ builder.Services.AddScoped<IUserRepository, UserRepository>();
 builder.Services.AddTransient<IConfigureOptions<SwaggerGenOptions>, ConfigureSwaggerOptions>();
 
 builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
-builder.Services.AddControllers();
+builder.Services.AddControllers()
+    .AddFluentValidation(options=>
+    {
+        // Validate child properties and root collection elements
+
+        options.ImplicitlyValidateChildProperties = true;
+        options.ImplicitlyValidateRootCollectionElements = true;
+
+        // Automatic registration of validations in assembly
+
+        options.RegisterValidatorsFromAssembly(Assembly.GetExecutingAssembly());
+    });
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
